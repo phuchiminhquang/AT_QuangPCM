@@ -307,39 +307,173 @@ func printShape3(height: Int) {
 printShape3(7)
 
 
-////Bai 6
-//func caySo(height: Int) {
-//    let numbers = [0,1,2,3,4,5,6,7,8,9]
-//    for row in 0..<height {
-//        var line = ""
-//        //Print space
-//        var numberspace = height - row
-//        while numberspace > 0 {
-//            line += " "
-//            numberspace -= 1
-//        }
-//
-//        var leftFirstNumber = row + 1
-//        while
-//        for leftFirstNumber in row...(row * 2 + 1) {
-//            line += String(numbers[leftFirstNumber%10+1])
-//        }
-//
-////        var nextnumber = row * 2
-////        while nextnumber > 0 {
-////            line += String(numbers[nextnumber%10])
-////            nextnumber -= 1
-////        }
-//
-//        print(line)
-//    }
-//}
+//Bai 6
+func caySo(height: Int) {
+    for row in 1...height {
+        var line = ""
+        //Print space
+        var numberspace = height - row - 1
+        while numberspace > 0 {
+            line += " "
+            numberspace -= 1
+        }
+
+        for j in 1...(2*row - 1) {
+            if j < row {
+                line += (String)((j + row - 1) % 10)
+            } else {
+                line += (String)((3 * row - j - 1) % 10)
+            }
+        }
+        print(line)
+    }
+}
 
 //caySo(9)
+//Bai 12
+func giaithuanhonhat(M: Int) -> Int {
+    var n = 0
+    var gt = 1
+    
+    repeat {
+        n += 1
+        gt *= n
+    } while gt <= M
+    
+    return n
+}
+
+print("So nho nhat sao cho n! >= M: \(giaithuanhonhat(20))")
 
 
+//Bai 13
+func TBC_TBN(numbers: Int...) -> (TBC: Double, TBN: Double) {
+    var TBC: Double = 0, TBN: Double = 1
+    
+    for number in numbers {
+        TBC += Double(number)
+        TBN *= Double(number)
+    }
+    TBC = TBC / Double(numbers.count)
+    TBN = sqrt(TBN)
+    
+    return (TBC, TBN)
+}
+
+let tbc_tbn = TBC_TBN(1,2,3,4,5)
+print("TBC: \(tbc_tbn.TBC) TBN: \(tbc_tbn.TBN) ")
 
 
+//Bai 14
+func tongchuso(number: Int) -> Int {
+    var tmp = number
+    var sum = 0
+    while tmp > 0 {
+        sum += tmp % 10
+        tmp = tmp / 10
+    }
+    return sum
+}
+
+print(tongchuso(12345))
+
+//Bai 15: Liet ke tat ca cac so k bang tong lap phuong cac chu so cua no (k < 1000)
+func lietke(k: Int) -> [Int]{
+    var count = 0
+    var result = [Int]()
+    for i in 1...9 {
+        for j in 0...9 {
+            for k in 0...9 {
+                if j * j * j + i * i * i + k * k * k == 100 * i + 10 * j + k {
+                    result.append(100 * i + 10 * j + k)
+                    count += 1
+                }
+            }
+        }
+    }
+    return result
+}
+
+let numbers = lietke(1000)
+var numberStr = ""
+for number in numbers {
+    numberStr += String(number) + ", "
+}
+print(numberStr)
+
+
+//Bai 16
+func isNguyenTo(number: Int) -> Bool {
+    switch number {
+    case _ where number <= 1:
+        return false
+    case 2:
+        return true
+    case 3:
+        return false
+    default:
+        for i in 2...Int(number / 2) {
+            if i * i == number {
+                return false
+            }
+        }
+    }
+    if number <= 1 {
+        return false
+    } else {
+        for i in 2...Int(sqrt(Double(number))) {
+            if number % i == 0 {
+                return false
+            }
+        }
+    }
+    return true
+}
+
+print(isNguyenTo(16))
+
+
+func timsoNgTo(N: Int, condition: (Int) -> Bool) -> [Int] {
+    var result = [Int]()
+    for number in 2...N {
+        if condition(number) {
+            result.append(number)
+        }
+    }
+    return result
+}
+
+let daysoNgTo = timsoNgTo(100, condition: isNguyenTo)
+numberStr = ""
+for soNgTo in daysoNgTo {
+    numberStr += String(soNgTo) + ", "
+}
+print(numberStr)
+
+
+//Bai 25: Giai chuong trinh tinh S bang 2 vong lap va in ra ket qua giong nhau
+func dayFibo(N: Int) -> [Int] {
+    var a = 1, b = 1
+    var fibo = [Int]()
+    fibo.append(a)
+    fibo.append(b)
+    
+    while b < N {
+        let tmp = b
+        b = a + b
+        a = tmp
+        fibo.append(b)
+    }
+    
+    return fibo
+}
+
+let daysoFibo = dayFibo(100)
+numberStr = ""
+for fibo in daysoFibo {
+    numberStr += String(fibo) + ", "
+}
+print(numberStr)
 
 
 
