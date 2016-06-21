@@ -477,6 +477,71 @@ print(numberStr)
 
 
 
+//Phan IV Chuong Trinh Con
+//Bai 1
+func giaithua(N: Int) -> Int {
+    if N == 1 {
+        return 1
+    } else {
+        return N * giaithua(N-1)
+    }
+}
+
+func Sin(x: Double) -> Double {
+    let epsilon: Double = 0.0001
+    var result: Double = 0.0
+    let loop: Int = 1
+    
+    var a: Double = 0
+    while fabs(a) >= epsilon {
+        let tu: Double = pow(-1.0, Double(loop)) * pow(x, Double(2 * loop - 1))
+        let mau: Double = Double(giaithua(2 * loop - 1))
+        a = tu / mau
+        result += a
+    }
+    return result
+}
+
+//Bai 5: Kiem tra so chinh phuong
+func isChinhphuong(N: Int) -> Bool {
+    for i in 1...Int(sqrt(Double(N))) {
+        if i * i == N {
+            return true
+        }
+    }
+    return false
+}
+
+//Bai 8
+func kiemtraSoBangTongLapPhuong(n: Int) -> Bool{
+    var tmp = n
+    var sum: Int = 0
+    
+    while tmp > 0 {
+        sum += Int(pow(Double(tmp%10), 3))
+        tmp = tmp / 10
+    }
+    return sum == n
+}
+
+print(kiemtraSoBangTongLapPhuong(153))
+
+//Bai 10 de quy tinh S
+func dequyS(a: Int, n: Int) -> Double {
+    if n == 0 {
+        return 0
+    } else {
+        return 1 / pow(Double(1 / a), Double(n))
+    }
+}
+
+print(dequyS(2, n: 8))
+
+
+
+
+
+
 
 
 
