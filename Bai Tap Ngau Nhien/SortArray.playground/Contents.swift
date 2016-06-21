@@ -4,23 +4,27 @@ import UIKit
 
 var str = "Hello, playground"
 
-func swapElement(inout a: Int, inout b: Int) {
-    let tmp = a
-    a = b
-    b = tmp
-}
 
-func randomSortArray(inout numbers: [Int]) {
-    let length:UInt32 = UInt32(numbers.count)
+func randomSortArray(numbers: [Int]) -> [Int] {
+    var result: [Int] = numbers
+    
+    let length:UInt32 = UInt32(numbers.count / 2)
+    func swap(fristIndex: Int, secondIndex: Int) {
+        let tmp = result[fristIndex]
+        result[fristIndex] = result[secondIndex]
+        result[secondIndex] = tmp
+    }
     for i in 0  ..< numbers.count  {
         let randomIndex: Int = Int(arc4random_uniform(length))
-        swapElement(&numbers[i], b: &numbers[randomIndex])
+        swap(i, secondIndex: randomIndex)
     }
+    return result
 }
+
 
 
 var numbers = [12,31,33,49,52,56,69]
-randomSortArray(&numbers)
+let randomNumbers = randomSortArray(numbers)
 
 
 
