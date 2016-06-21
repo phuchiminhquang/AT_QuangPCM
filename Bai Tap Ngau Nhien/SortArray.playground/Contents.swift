@@ -4,12 +4,6 @@ import UIKit
 
 var str = "Hello, playground"
 
-func swapElement1(inout numbers: [Int], firstIndex: Int, secondIndex: Int) {
-    let tmp = numbers[firstIndex]
-    numbers[firstIndex] = numbers[secondIndex]
-    numbers[secondIndex] = tmp
-}
-
 func swapElement(inout a: Int, inout b: Int) {
     let tmp = a
     a = b
@@ -24,8 +18,10 @@ func randomSortArray(inout numbers: [Int]) {
     }
 }
 
+
 var numbers = [12,31,33,49,52,56,69]
 randomSortArray(&numbers)
+
 
 
 
