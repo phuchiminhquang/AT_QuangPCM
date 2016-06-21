@@ -4,20 +4,24 @@ import UIKit
 
 var str = "Hello, playground"
 
+//func isSquareNumber1(n: Int) -> Bool {
+//    let loop = Int(sqrt(Double(n)))
+//    for i in 1...loop {
+//        if i * i == n {
+//            return true
+//        }
+//    }
+//    return false
+//}
+
 func isSquareNumber(n: Int) -> Bool {
-    let loop = Int(sqrt(Double(n)))
-    for i in 1...loop {
-        if i * i == n {
-            return true
-        }
-    }
-    return false
+    return sqrt(Double(n))%10 == 0
 }
 
-func squareNumbersLessThanOneHundred(condition: (Int) -> Bool) -> [Int]{
+func squareNumbersLessThanOneHundred() -> [Int]{
     var result = [Int]()
-    for number in 2..<100 {
-        if condition(number) {
+    for number in 4..<100 {
+        if isSquareNumber(number) {
             result.append(number)
         }
     }
@@ -37,7 +41,7 @@ func theFirstOneHundredSquareNumber() -> [Int] {
 }
 
 //Show the result
-let listOfSquareNumberLessThan100 = squareNumbersLessThanOneHundred(isSquareNumber)
+let listOfSquareNumberLessThan100 = squareNumbersLessThanOneHundred()
 var listOfSquareNumerString = ""
 for squareNumber in listOfSquareNumberLessThan100 {
     listOfSquareNumerString += String(squareNumber) + ", "
@@ -51,5 +55,7 @@ for squareNumber in listOfFirstOneHundredSquareNumber {
     listOfFirstOneHundredSquareNumberString += String(squareNumber) + ", "
 }
 print(listOfFirstOneHundredSquareNumberString)
+
+
 
 
