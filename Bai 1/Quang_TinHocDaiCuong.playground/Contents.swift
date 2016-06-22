@@ -537,8 +537,10 @@ func dequyS(a: Int, n: Int) -> Double {
 
 print(dequyS(2, n: 8))
 
+//abbc xta
 
 
+ 
 
 
 
