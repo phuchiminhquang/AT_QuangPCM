@@ -631,8 +631,9 @@ func fillInArray(n: Int) -> [Int] {
     return result
 }
 
-func convertArray(numbers: [Int]) -> [Int] {
+func sortingArray(numbers: [Int]) -> (increased: [Int], descending: [Int]) {
     var increasedNumbers = numbers
+    var descendingNumbers = numbers
     
     for i in 0..<numbers.count {
         for j in 0..<numbers.count {
@@ -641,13 +642,20 @@ func convertArray(numbers: [Int]) -> [Int] {
                 increasedNumbers[i] = increasedNumbers[j]
                 increasedNumbers[j] = tmp
             }
+            if descendingNumbers[i] < descendingNumbers[j] {
+                let tmp = descendingNumbers[i]
+                descendingNumbers[i] = descendingNumbers[j]
+                descendingNumbers[j] = tmp
+            }
         }
     }
-    return increasedNumbers
+    return (increasedNumbers , descendingNumbers)
 }
 
+
+
 func isKarperkar(n: Int) -> Bool {
-    let sortedArray = convertArray(fillInArray(n))
+    let sortedArray = sortingArray(fillInArray(n)).increased
     
     var min = 0
     var max = 0
@@ -686,8 +694,112 @@ func isFibo(n: Int) -> Bool {
 
 //print(isFibo(8))
 
+// MARK: Phan V
 //------ PHAN V: Kieu Mang
 
+//Bai 3: 1 mang vs n phan tu nguyen In. begin with i%5 == 0 ... end with i%5 != 0.
+
+func optionalArray(numbers: Int...) -> [Int] {
+    var result = numbers
+    
+    func swap(firstIndex: Int, secondIndex: Int) {
+        let tmp = result[firstIndex]
+        result[firstIndex] = result[secondIndex]
+        result[secondIndex] = tmp
+    }
+    
+    var i = 0, j = numbers.count - 1
+    
+    while i < j {
+        while result[i] % 5 == 0 && result[i] % 2 == 1 {
+            i += 1
+        }
+        while result[j] % 5 != 0 {
+            j -= 1
+        }
+        swap(i, secondIndex: j)
+        i += 1
+        j -= 1
+    }
+    return result
+}
+
+optionalArray(3,15,13,42,10,15)
+
+//Bai 7: Tong cac phan tu tu phan tu am dau tien, khong thi tinh tong cac phan tu co ba chu so
+func sumOfElement(numbers: Int...) -> Int {
+    var sum = 0, sum1 = 0
+    var flag = false
+    for i in numbers {
+        if (i < 0) {
+            flag = true
+        }
+        if flag {
+            sum += i
+        }
+        
+        if i > 99 {
+            sum1 += i
+        }
+    }
+    
+    return flag ? sum : sum1
+}
+
+sumOfElement(2,3,-1,123,23,4)
+
+
+//Bai 8: Sap xep mang tang dan, tinh tong cac phan tu la so chinh phuong, neu khong thi in ra thong bao
+func isSquareNumber(n: Int) -> Bool {
+    let loop = Int(sqrt(Double(n)))
+    for i in 1...loop {
+        if i * i == n {
+            return true
+        }
+    }
+    return false
+}
+
+func sumOfSquareNumberInArray(numbers: Int...) -> (isSuccess: Bool, result: Int, message: String) {
+    let sortedArray = sortingArray(numbers).increased
+    var sum: Int = 0
+    for number in sortedArray {
+        if isSquareNumber(number) {
+            sum += number
+        }
+    }
+    return sum > 0 ? (true, sum, "There any square numbers") : (false, sum, "There's no square number")
+}
+
+let a = sumOfSquareNumberInArray(4,3,9,16,2)
+
+
+func reverseArray(numbers: Int...) -> [Int] {
+    var result = numbers
+    var i = 0, j = numbers.count - 1
+    while i < j {
+        let tmp = result[i]
+        result[j] = result[i]
+        result[i] = tmp
+        i += 1
+        j -= 1
+    }
+    return result
+}
+
+
+//------------ Phan 5: Kieu Mang
+
+var stt: [[Int]] = [[Int]]()
+
+for i in 0..<5 {
+    stt.append([Int]())
+    for j in 0...5 {
+        stt[i].append(j)
+    }
+}
+
+print(stt)
 
 
 
@@ -695,12 +807,43 @@ func isFibo(n: Int) -> Bool {
 
 
 
+print(sqrt(5.0) % 10)
+print(2 % 10)
+
+
+func create2DArrayByRandomly(n: Int, m: Int, limit: Int) -> [[Int]] {
+   
+    var result = [[Int]]()
+    
+    for i in 0..<n {
+        result.append([Int]())
+        for _ in 0..<n {
+            let randomNumber: Int = Int(arc4random_uniform(UInt32(limit)))
+            result[i].append(randomNumber)
+        }
+        
+    }
+    return result
+}
 
 
 
 
+print(create2DArrayByRandomly(4, m: 4, limit: 9))
 
+var array: [Int] = []
+var abc = 10
+var f = 5.5
+var hello = "hello"
 
+var letters = Set<Character>()
+letters.insert("c")
+letters.insert("a")
+letters.insert("b")
+
+letters.insert("c")
+
+print(letters)
 
 
 

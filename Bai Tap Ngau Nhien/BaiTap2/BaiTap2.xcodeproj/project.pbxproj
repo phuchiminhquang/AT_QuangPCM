@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B2DC4021D1AA0E1007B0723 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2DC4001D1AA0E1007B0723 /* HomeViewController.swift */; };
+		0B2DC4031D1AA0E1007B0723 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2DC4011D1AA0E1007B0723 /* HomeViewController.xib */; };
 		0B4F50CE1D1A9FA300FD4AA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F50CD1D1A9FA300FD4AA0 /* AppDelegate.swift */; };
 		0B4F50D01D1A9FA300FD4AA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F50CF1D1A9FA300FD4AA0 /* ViewController.swift */; };
-		0B4F50D31D1A9FA300FD4AA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4F50D11D1A9FA300FD4AA0 /* Main.storyboard */; };
 		0B4F50D51D1A9FA400FD4AA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B4F50D41D1A9FA400FD4AA0 /* Assets.xcassets */; };
 		0B4F50D81D1A9FA400FD4AA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4F50D61D1A9FA400FD4AA0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B2DC4001D1AA0E1007B0723 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0B2DC4011D1AA0E1007B0723 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		0B4F50CA1D1A9FA300FD4AA0 /* BaiTap2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiTap2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B4F50CD1D1A9FA300FD4AA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B4F50CF1D1A9FA300FD4AA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0B4F50D21D1A9FA300FD4AA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B4F50D41D1A9FA400FD4AA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B4F50D71D1A9FA400FD4AA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B4F50D91D1A9FA400FD4AA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,10 +58,11 @@
 			children = (
 				0B4F50CD1D1A9FA300FD4AA0 /* AppDelegate.swift */,
 				0B4F50CF1D1A9FA300FD4AA0 /* ViewController.swift */,
-				0B4F50D11D1A9FA300FD4AA0 /* Main.storyboard */,
 				0B4F50D41D1A9FA400FD4AA0 /* Assets.xcassets */,
 				0B4F50D61D1A9FA400FD4AA0 /* LaunchScreen.storyboard */,
 				0B4F50D91D1A9FA400FD4AA0 /* Info.plist */,
+				0B2DC4001D1AA0E1007B0723 /* HomeViewController.swift */,
+				0B2DC4011D1AA0E1007B0723 /* HomeViewController.xib */,
 			);
 			path = BaiTap2;
 			sourceTree = "<group>";
@@ -124,7 +127,7 @@
 			files = (
 				0B4F50D81D1A9FA400FD4AA0 /* LaunchScreen.storyboard in Resources */,
 				0B4F50D51D1A9FA400FD4AA0 /* Assets.xcassets in Resources */,
-				0B4F50D31D1A9FA300FD4AA0 /* Main.storyboard in Resources */,
+				0B2DC4031D1AA0E1007B0723 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,20 +140,13 @@
 			files = (
 				0B4F50D01D1A9FA300FD4AA0 /* ViewController.swift in Sources */,
 				0B4F50CE1D1A9FA300FD4AA0 /* AppDelegate.swift in Sources */,
+				0B2DC4021D1AA0E1007B0723 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0B4F50D11D1A9FA300FD4AA0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B4F50D21D1A9FA300FD4AA0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0B4F50D61D1A9FA400FD4AA0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,6 +284,7 @@
 				0B4F50DE1D1A9FA400FD4AA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
