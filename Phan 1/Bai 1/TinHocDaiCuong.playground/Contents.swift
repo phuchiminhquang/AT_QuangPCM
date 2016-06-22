@@ -342,8 +342,8 @@ func giaithuanhonhat(M: Int) -> Int {
     
     return n
 }
-
-print("So nho nhat sao cho n! >= M: \(giaithuanhonhat(20))")
+//
+//print("So nho nhat sao cho n! >= M: \(giaithuanhonhat(20))")
 
 
 //Bai 13
@@ -360,8 +360,8 @@ func TBC_TBN(numbers: Int...) -> (TBC: Double, TBN: Double) {
     return (TBC, TBN)
 }
 
-let tbc_tbn = TBC_TBN(1,2,3,4,5)
-print("TBC: \(tbc_tbn.TBC) TBN: \(tbc_tbn.TBN) ")
+//let tbc_tbn = TBC_TBN(1,2,3,4,5)
+//print("TBC: \(tbc_tbn.TBC) TBN: \(tbc_tbn.TBN) ")
 
 
 //Bai 14
@@ -375,7 +375,7 @@ func tongchuso(number: Int) -> Int {
     return sum
 }
 
-print(tongchuso(12345))
+//print(tongchuso(12345))
 
 //Bai 15: Liet ke tat ca cac so k bang tong lap phuong cac chu so cua no (k < 1000)
 func lietke(k: Int) -> [Int]{
@@ -399,7 +399,7 @@ var numberStr = ""
 for number in numbers {
     numberStr += String(number) + ", "
 }
-print(numberStr)
+//print(numberStr)
 
 
 //Bai 16
@@ -430,7 +430,7 @@ func isNguyenTo(number: Int) -> Bool {
     return true
 }
 
-print(isNguyenTo(16))
+//print(isNguyenTo(16))
 
 
 func timsoNgTo(N: Int, condition: (Int) -> Bool) -> [Int] {
@@ -448,7 +448,7 @@ numberStr = ""
 for soNgTo in daysoNgTo {
     numberStr += String(soNgTo) + ", "
 }
-print(numberStr)
+//print(numberStr)
 
 
 //Bai 25: Giai chuong trinh tinh S bang 2 vong lap va in ra ket qua giong nhau
@@ -473,7 +473,7 @@ numberStr = ""
 for fibo in daysoFibo {
     numberStr += String(fibo) + ", "
 }
-print(numberStr)
+//print(numberStr)
 
 
 
@@ -524,20 +524,179 @@ func kiemtraSoBangTongLapPhuong(n: Int) -> Bool{
     return sum == n
 }
 
-print(kiemtraSoBangTongLapPhuong(153))
+//print(kiemtraSoBangTongLapPhuong(153))
 
+//--------------------------- Phan De Quy
 //Bai 10 de quy tinh S
 func dequyS(a: Int, n: Int) -> Double {
     if n == 0 {
         return 0
     } else {
-        return 1 / pow(Double(1 / a), Double(n))
+        return 1 / pow(Double(a), Double(n)) + dequyS(a, n: n-1)
     }
 }
 
-print(dequyS(2, n: 8))
+//print(dequyS(1, n: 2))
 
-//abbc xta
+//Bai 12
+//Căn bậc n của i
+func squareRootOf(x: Double, n: Int) -> Double {
+    let epsilon: Double = 0.001
+    
+    if x == 0 {
+        return 0
+    }
+    
+    var y0 = x
+    var y: Double = 0
+    repeat {
+        y = y0
+        y0 = 1 / Double(n) * (Double(n - 1) * y + (x / pow(y, Double(n-1))))
+        
+    } while abs(y - y0) < epsilon
+   
+    return (y + y0) / 2
+}
+
+func dequyS1(n: Int) -> Double{
+    if n == 1 {
+        return 1
+    } else {
+        return Double(n) / squareRootOf(Double(n), n: n) + dequyS1(n - 1)
+    }
+}
+
+//print(dequyS1(2))
+
+
+//Bai 15 USCLN va BSCBN
+
+func USCLN(x: Int, y: Int) -> Int {
+    var a = abs(x)
+    var b = abs(y)
+    
+    while a != 0 && b != 0 {
+        if a > b {
+            a -= b
+        } else {
+            b -= a
+        }
+    }
+    return a == 0 ? b : a
+}
+
+func BSCNN(x: Int, y: Int) -> Int {
+    return x * y / USCLN(x, y: y)
+}
+
+func TinhUSCLNvaBSCBN(x: Int, y: Int) -> (USCLN: Int, BSCNN: Int) {
+    let uscln = USCLN(x, y: y)
+    return (uscln, x * y / uscln)
+}
+
+
+//Bai 16: Nhap so nguyen tu ban phim va in ra co so bat ky (2-16)
+func doicoso(n: Int, coso: Int) -> String {
+    var so = n
+    var result = [Int]()
+    while so > 0 {
+        result.append(so%coso)
+        print(so%coso)
+        so /= coso
+    }
+    
+    var number = ""
+    if result.count > 0 {
+        for i in 0..<result.count {
+            number += String(result[i])
+        }
+    }
+    
+    print(number)
+    return number
+}
+
+//doicoso(8, coso: 2)
+
+
+//Bai 19: tim so Kaprekar
+
+func fillInArray(n: Int) -> [Int] {
+    var result = [Int]()
+    var number = n
+    while number > 0 {
+        result.append(number % 10)
+        number = number / 10
+    }
+    return result
+}
+
+func convertArray(numbers: [Int]) -> [Int] {
+    var increasedNumbers = numbers
+    
+    for i in 0..<numbers.count {
+        for j in 0..<numbers.count {
+            if increasedNumbers[i] > increasedNumbers[j] {
+                let tmp = increasedNumbers[i]
+                increasedNumbers[i] = increasedNumbers[j]
+                increasedNumbers[j] = tmp
+            }
+        }
+    }
+    return increasedNumbers
+}
+
+func isKarperkar(n: Int) -> Bool {
+    let sortedArray = convertArray(fillInArray(n))
+    
+    var min = 0
+    var max = 0
+    
+    for i in 0..<sortedArray.count {
+        min = min*10 + sortedArray[i]
+        max = max*10 + sortedArray[sortedArray.count - i - 1]
+    }
+//    print("\(max) \(min)")
+    return max - min == n ? true : false
+ }
+
+func printKarperkarLessThan(n: Int) -> String {
+    var str = ""
+    for i in 10..<n {
+        if isKarperkar(i) {
+            str += String(i)
+        }
+    }
+    return str
+}
+
+//printKarperkarLessThan(500)
+
+//Bai 20: Kiem tra n co phai la so fibo
+
+func isFibo(n: Int) -> Bool {
+    var a: Int = 1, b: Int = 1
+    while (b < n) {
+        let tmp = b
+        b += a
+        a = tmp
+    }
+    return b == n
+}
+
+//print(isFibo(8))
+
+//------ PHAN V: Kieu Mang
+
+
+
+
+
+
+
+
+
+
 
 
 
