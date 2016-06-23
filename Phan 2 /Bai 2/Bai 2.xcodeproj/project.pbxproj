@@ -12,6 +12,8 @@
 		0BD235721D1B95DB00EE0F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD235701D1B95DB00EE0F38 /* LaunchScreen.storyboard */; };
 		0BD2357B1D1B960100EE0F38 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD235791D1B960100EE0F38 /* RootController.swift */; };
 		0BD2357C1D1B960100EE0F38 /* RootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BD2357A1D1B960100EE0F38 /* RootController.xib */; };
+		0BD2357F1D1BE12200EE0F38 /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2357D1D1BE12200EE0F38 /* InfoController.swift */; };
+		0BD235801D1BE12200EE0F38 /* InfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BD2357E1D1BE12200EE0F38 /* InfoController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0BD235731D1B95DB00EE0F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BD235791D1B960100EE0F38 /* RootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
 		0BD2357A1D1B960100EE0F38 /* RootController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootController.xib; sourceTree = "<group>"; };
+		0BD2357D1D1BE12200EE0F38 /* InfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
+		0BD2357E1D1BE12200EE0F38 /* InfoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				0BD2356E1D1B95DB00EE0F38 /* Assets.xcassets */,
 				0BD235701D1B95DB00EE0F38 /* LaunchScreen.storyboard */,
 				0BD235731D1B95DB00EE0F38 /* Info.plist */,
+				0BD2357D1D1BE12200EE0F38 /* InfoController.swift */,
+				0BD2357E1D1BE12200EE0F38 /* InfoController.xib */,
 			);
 			path = "Bai 2";
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 				0BD235721D1B95DB00EE0F38 /* LaunchScreen.storyboard in Resources */,
 				0BD2357C1D1B960100EE0F38 /* RootController.xib in Resources */,
 				0BD2356F1D1B95DB00EE0F38 /* Assets.xcassets in Resources */,
+				0BD235801D1BE12200EE0F38 /* InfoController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +144,7 @@
 			files = (
 				0BD235681D1B95DB00EE0F38 /* AppDelegate.swift in Sources */,
 				0BD2357B1D1B960100EE0F38 /* RootController.swift in Sources */,
+				0BD2357F1D1BE12200EE0F38 /* InfoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +288,7 @@
 				0BD235781D1B95DB00EE0F38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

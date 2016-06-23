@@ -19,7 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if let window = window {
             let root = RootController(nibName: "RootController", bundle: nil)
-            window.rootViewController = root
+            let navigation = UINavigationController(rootViewController: root)
+            window.rootViewController = navigation
             
             window.backgroundColor = UIColor.whiteColor()
             window.makeKeyAndVisible()
