@@ -7,25 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B9385B41D1CD86D0007FE08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9385B31D1CD86D0007FE08 /* AppDelegate.swift */; };
-		0B9385BB1D1CD86D0007FE08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B9385BA1D1CD86D0007FE08 /* Assets.xcassets */; };
-		0B9385BE1D1CD86D0007FE08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B9385BC1D1CD86D0007FE08 /* LaunchScreen.storyboard */; };
-		0B9385C71D1CD9460007FE08 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9385C51D1CD9460007FE08 /* RootController.swift */; };
-		0B9385C81D1CD9460007FE08 /* RootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B9385C61D1CD9460007FE08 /* RootController.xib */; };
+		0B9385FC1D1D177E0007FE08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9385FB1D1D177E0007FE08 /* AppDelegate.swift */; };
+		0B9385FE1D1D177E0007FE08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9385FD1D1D177E0007FE08 /* ViewController.swift */; };
+		0B9386011D1D177E0007FE08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B9385FF1D1D177E0007FE08 /* Main.storyboard */; };
+		0B9386031D1D177E0007FE08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B9386021D1D177E0007FE08 /* Assets.xcassets */; };
+		0B9386061D1D177E0007FE08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B9386041D1D177E0007FE08 /* LaunchScreen.storyboard */; };
+		0B9386101D1D19490007FE08 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B93860E1D1D19490007FE08 /* RootController.swift */; };
+		0B9386111D1D19490007FE08 /* RootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B93860F1D1D19490007FE08 /* RootController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B9385B01D1CD86D0007FE08 /* Bai 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bai 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B9385B31D1CD86D0007FE08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0B9385BA1D1CD86D0007FE08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0B9385BD1D1CD86D0007FE08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0B9385BF1D1CD86D0007FE08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0B9385C51D1CD9460007FE08 /* RootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
-		0B9385C61D1CD9460007FE08 /* RootController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootController.xib; sourceTree = "<group>"; };
+		0B9385F81D1D177E0007FE08 /* Bai 5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bai 5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B9385FB1D1D177E0007FE08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B9385FD1D1D177E0007FE08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B9386001D1D177E0007FE08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B9386021D1D177E0007FE08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B9386051D1D177E0007FE08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B9386071D1D177E0007FE08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B93860E1D1D19490007FE08 /* RootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
+		0B93860F1D1D19490007FE08 /* RootController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0B9385AD1D1CD86D0007FE08 /* Frameworks */ = {
+		0B9385F51D1D177E0007FE08 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,71 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B9385A71D1CD86C0007FE08 = {
+		0B9385EF1D1D177E0007FE08 = {
 			isa = PBXGroup;
 			children = (
-				0B9385B21D1CD86D0007FE08 /* Bai 3 */,
-				0B9385B11D1CD86D0007FE08 /* Products */,
+				0B9385FA1D1D177E0007FE08 /* Bai 5 */,
+				0B9385F91D1D177E0007FE08 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0B9385B11D1CD86D0007FE08 /* Products */ = {
+		0B9385F91D1D177E0007FE08 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0B9385B01D1CD86D0007FE08 /* Bai 3.app */,
+				0B9385F81D1D177E0007FE08 /* Bai 5.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0B9385B21D1CD86D0007FE08 /* Bai 3 */ = {
+		0B9385FA1D1D177E0007FE08 /* Bai 5 */ = {
 			isa = PBXGroup;
 			children = (
-				0B9385B31D1CD86D0007FE08 /* AppDelegate.swift */,
-				0B9385BA1D1CD86D0007FE08 /* Assets.xcassets */,
-				0B9385BC1D1CD86D0007FE08 /* LaunchScreen.storyboard */,
-				0B9385BF1D1CD86D0007FE08 /* Info.plist */,
-				0B9385C51D1CD9460007FE08 /* RootController.swift */,
-				0B9385C61D1CD9460007FE08 /* RootController.xib */,
+				0B9385FB1D1D177E0007FE08 /* AppDelegate.swift */,
+				0B9385FD1D1D177E0007FE08 /* ViewController.swift */,
+				0B9385FF1D1D177E0007FE08 /* Main.storyboard */,
+				0B9386021D1D177E0007FE08 /* Assets.xcassets */,
+				0B9386041D1D177E0007FE08 /* LaunchScreen.storyboard */,
+				0B9386071D1D177E0007FE08 /* Info.plist */,
+				0B93860E1D1D19490007FE08 /* RootController.swift */,
+				0B93860F1D1D19490007FE08 /* RootController.xib */,
 			);
-			path = "Bai 3";
+			path = "Bai 5";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0B9385AF1D1CD86D0007FE08 /* Bai 3 */ = {
+		0B9385F71D1D177E0007FE08 /* Bai 5 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B9385C21D1CD86D0007FE08 /* Build configuration list for PBXNativeTarget "Bai 3" */;
+			buildConfigurationList = 0B93860A1D1D177E0007FE08 /* Build configuration list for PBXNativeTarget "Bai 5" */;
 			buildPhases = (
-				0B9385AC1D1CD86D0007FE08 /* Sources */,
-				0B9385AD1D1CD86D0007FE08 /* Frameworks */,
-				0B9385AE1D1CD86D0007FE08 /* Resources */,
+				0B9385F41D1D177E0007FE08 /* Sources */,
+				0B9385F51D1D177E0007FE08 /* Frameworks */,
+				0B9385F61D1D177E0007FE08 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Bai 3";
-			productName = "Bai 3";
-			productReference = 0B9385B01D1CD86D0007FE08 /* Bai 3.app */;
+			name = "Bai 5";
+			productName = "Bai 5";
+			productReference = 0B9385F81D1D177E0007FE08 /* Bai 5.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0B9385A81D1CD86C0007FE08 /* Project object */ = {
+		0B9385F01D1D177E0007FE08 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Quang Phu";
 				TargetAttributes = {
-					0B9385AF1D1CD86D0007FE08 = {
+					0B9385F71D1D177E0007FE08 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 0B9385AB1D1CD86D0007FE08 /* Build configuration list for PBXProject "Bai 3" */;
+			buildConfigurationList = 0B9385F31D1D177E0007FE08 /* Build configuration list for PBXProject "Bai 5" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -107,46 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 0B9385A71D1CD86C0007FE08;
-			productRefGroup = 0B9385B11D1CD86D0007FE08 /* Products */;
+			mainGroup = 0B9385EF1D1D177E0007FE08;
+			productRefGroup = 0B9385F91D1D177E0007FE08 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0B9385AF1D1CD86D0007FE08 /* Bai 3 */,
+				0B9385F71D1D177E0007FE08 /* Bai 5 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0B9385AE1D1CD86D0007FE08 /* Resources */ = {
+		0B9385F61D1D177E0007FE08 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B9385BE1D1CD86D0007FE08 /* LaunchScreen.storyboard in Resources */,
-				0B9385C81D1CD9460007FE08 /* RootController.xib in Resources */,
-				0B9385BB1D1CD86D0007FE08 /* Assets.xcassets in Resources */,
+				0B9386061D1D177E0007FE08 /* LaunchScreen.storyboard in Resources */,
+				0B9386031D1D177E0007FE08 /* Assets.xcassets in Resources */,
+				0B9386011D1D177E0007FE08 /* Main.storyboard in Resources */,
+				0B9386111D1D19490007FE08 /* RootController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0B9385AC1D1CD86D0007FE08 /* Sources */ = {
+		0B9385F41D1D177E0007FE08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B9385B41D1CD86D0007FE08 /* AppDelegate.swift in Sources */,
-				0B9385C71D1CD9460007FE08 /* RootController.swift in Sources */,
+				0B9385FE1D1D177E0007FE08 /* ViewController.swift in Sources */,
+				0B9385FC1D1D177E0007FE08 /* AppDelegate.swift in Sources */,
+				0B9386101D1D19490007FE08 /* RootController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0B9385BC1D1CD86D0007FE08 /* LaunchScreen.storyboard */ = {
+		0B9385FF1D1D177E0007FE08 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0B9385BD1D1CD86D0007FE08 /* Base */,
+				0B9386001D1D177E0007FE08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0B9386041D1D177E0007FE08 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B9386051D1D177E0007FE08 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -154,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0B9385C01D1CD86D0007FE08 /* Debug */ = {
+		0B9386081D1D177E0007FE08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -200,7 +216,7 @@
 			};
 			name = Debug;
 		};
-		0B9385C11D1CD86D0007FE08 /* Release */ = {
+		0B9386091D1D177E0007FE08 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -239,24 +255,24 @@
 			};
 			name = Release;
 		};
-		0B9385C31D1CD86D0007FE08 /* Debug */ = {
+		0B93860B1D1D177E0007FE08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Bai 3/Info.plist";
+				INFOPLIST_FILE = "Bai 5/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fu.Bai-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fu.Bai-5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		0B9385C41D1CD86D0007FE08 /* Release */ = {
+		0B93860C1D1D177E0007FE08 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Bai 3/Info.plist";
+				INFOPLIST_FILE = "Bai 5/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fu.Bai-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fu.Bai-5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -264,24 +280,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B9385AB1D1CD86D0007FE08 /* Build configuration list for PBXProject "Bai 3" */ = {
+		0B9385F31D1D177E0007FE08 /* Build configuration list for PBXProject "Bai 5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B9385C01D1CD86D0007FE08 /* Debug */,
-				0B9385C11D1CD86D0007FE08 /* Release */,
+				0B9386081D1D177E0007FE08 /* Debug */,
+				0B9386091D1D177E0007FE08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B9385C21D1CD86D0007FE08 /* Build configuration list for PBXNativeTarget "Bai 3" */ = {
+		0B93860A1D1D177E0007FE08 /* Build configuration list for PBXNativeTarget "Bai 5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B9385C31D1CD86D0007FE08 /* Debug */,
-				0B9385C41D1CD86D0007FE08 /* Release */,
+				0B93860B1D1D177E0007FE08 /* Debug */,
+				0B93860C1D1D177E0007FE08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0B9385A81D1CD86C0007FE08 /* Project object */;
+	rootObject = 0B9385F01D1D177E0007FE08 /* Project object */;
 }

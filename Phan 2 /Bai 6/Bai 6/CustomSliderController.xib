@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomSliderController" customModule="Bai_6" customModuleProvider="target">
+            <connections>
+                <outlet property="constant" destination="Ric-Xj-Bp7" id="qk8-mc-FqJ"/>
+                <outlet property="sliderView" destination="xlt-WQ-xHK" id="fY4-LJ-baT"/>
+                <outlet property="superView" destination="zid-CE-BfZ" id="rmf-Qc-q9g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zid-CE-BfZ">
+                    <rect key="frame" x="40" y="120" width="240" height="328"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlt-WQ-xHK">
+                            <rect key="frame" x="84" y="160" width="72" height="38"/>
+                            <color key="backgroundColor" red="0.88231169870000004" green="0.114600037" blue="0.36286654610000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="72" id="0af-5L-83c"/>
+                                <constraint firstAttribute="height" constant="38" id="lmK-E4-KHP"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hv2-85-jas">
+                            <rect key="frame" x="101" y="198" width="38" height="130"/>
+                            <color key="backgroundColor" red="0.1825775754" green="0.46068354239999998" blue="0.88231169870000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="38" id="aqA-rg-Kej"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggD-ym-f2a">
+                            <rect key="frame" x="101" y="0.0" width="38" height="160"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="160" id="Ric-Xj-Bp7"/>
+                                <constraint firstAttribute="width" constant="38" id="zb7-Ce-SGF"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="xlt-WQ-xHK" firstAttribute="top" secondItem="ggD-ym-f2a" secondAttribute="bottom" id="2xR-zb-xC2"/>
+                        <constraint firstItem="ggD-ym-f2a" firstAttribute="top" secondItem="zid-CE-BfZ" secondAttribute="top" id="9Ca-Xy-7oc"/>
+                        <constraint firstItem="xlt-WQ-xHK" firstAttribute="centerX" secondItem="zid-CE-BfZ" secondAttribute="centerX" id="9Qb-vk-afh"/>
+                        <constraint firstItem="hv2-85-jas" firstAttribute="centerX" secondItem="zid-CE-BfZ" secondAttribute="centerX" id="AqW-Ht-M18"/>
+                        <constraint firstItem="hv2-85-jas" firstAttribute="top" secondItem="xlt-WQ-xHK" secondAttribute="bottom" id="DWu-Ct-T90"/>
+                        <constraint firstAttribute="height" constant="328" id="DZL-Fc-6mt"/>
+                        <constraint firstItem="ggD-ym-f2a" firstAttribute="centerX" secondItem="zid-CE-BfZ" secondAttribute="centerX" id="X9b-et-mnq"/>
+                        <constraint firstItem="xlt-WQ-xHK" firstAttribute="top" secondItem="ggD-ym-f2a" secondAttribute="bottom" id="eyV-1z-xsY"/>
+                        <constraint firstAttribute="width" constant="240" id="lXp-S2-bIO"/>
+                        <constraint firstAttribute="bottom" secondItem="hv2-85-jas" secondAttribute="bottom" id="s9S-DM-lbQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zid-CE-BfZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="6ZF-Ih-3EI"/>
+                <constraint firstItem="zid-CE-BfZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="sR3-dP-CY4"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
