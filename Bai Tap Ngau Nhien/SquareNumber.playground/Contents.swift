@@ -56,7 +56,14 @@ var str = "Hello, playground"
 //}
 //print(listOfFirstOneHundredSquareNumberString)
 
-var du = Int(2.3 % 10)
-print(du)
+let currentDate = NSDate()
+let dateFormatter = NSDateFormatter()
+dateFormatter.dateStyle = NSDateFormatterStyle.FullStyle
+dateFormatter.dateFormat = "EEEE, dd, MMMM, yyyy HH:mm:ss"
+
+var convertedDate = dateFormatter.stringFromDate(currentDate)
+print(convertedDate)
+print(String(NSLocale.currentLocale()))
 
 
+//1002 14849 21267
