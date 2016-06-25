@@ -48,8 +48,8 @@ class RootController: UIViewController {
             
             isloaded = true
             selectedView = viewA
-            self.viewB.hidden = true
-            self.viewC.hidden = true
+            self.viewB.hidden = false
+            self.viewC.hidden = false
         }
     }
 
