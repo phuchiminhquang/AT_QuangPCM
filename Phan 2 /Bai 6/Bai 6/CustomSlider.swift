@@ -51,6 +51,10 @@ class CustomSlider: UIView {
                     self.heightConstraint.constant = changeValue
                     }, completion: { (finished: Bool) -> Void in
                      self.heightConstraint.constant = changeValue
+                        
+                    let greenHigth = self.frame.height - self.centerView.center.y - self.centerView.frame.width / 2
+                    let sliderHight = self.frame.height - self.centerView.frame.width
+                    self.lbSliderValue.text = "\(Int(greenHigth / sliderHight * 100))%"
                 })
                 
                 lastLocation = touch.locationInView(self)
@@ -69,11 +73,11 @@ class CustomSlider: UIView {
                 
                 if self.centerView.frame.origin.y >= 0 && self.centerView.frame.origin.y + self.centerView.frame.width <= self.frame.height {
                     
-                    if newLocation.y >= self.centerView.frame.width / 2 && newLocation.y <= CGRectGetHeight(self.frame) - self.centerView.frame.width / 2 {
+                    if newLocation.y >= self.centerView.frame.width / 2 && newLocation.y < CGRectGetHeight(self.frame) - self.centerView.frame.width / 2 {
                         
                         let changeValue = newLocation.y - lastLocation.y
                         //5
-                        let greenHigth = self.frame.height - newLocation.y - self.centerView.frame.width / 2
+                        let greenHigth = self.frame.height - self.centerView.center.y - self.centerView.frame.width / 2
                         let sliderHight = self.frame.height - self.centerView.frame.width
                         
                         
@@ -87,6 +91,17 @@ class CustomSlider: UIView {
                 }
             }
         }
+    }
+    
+    // MARK: private function
+    func updateSlider(percent: Int) {
+        let sliderHight: Float = Float(self.frame.height - self.centerView.frame.width)
+        let greenHight: Float = Float(percent) * sliderHight / 100
+        
+        UIView.animateWithDuration(0.5, animations: { () -> Void in
+            self.heightConstraint.constant = CGFloat(greenHight)
+            self.lbSliderValue.text = "\(percent)%"
+        })
     }
     
 }

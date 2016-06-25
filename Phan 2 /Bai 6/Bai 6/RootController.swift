@@ -10,24 +10,26 @@ import UIKit
 
 class RootController: UIViewController {
 
+   
+    
+    @IBOutlet weak var tfSliderValue: UITextField!
     var isLoad = false
+    var myslider = CustomSlider()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         
     }
     
     override func viewDidAppear(animated: Bool) {
         if !isLoad {
             let screenFrame = self.view.frame
-            let sliderWidth: CGFloat = 80
-            let sliderHeigth: CGFloat = 300
+            let sliderWidth: CGFloat = 60
+            let sliderHeigth: CGFloat = 200
             
             let sliderFrame = CGRectMake(screenFrame.width / 2 - sliderWidth / 2, screenFrame.height / 2 - sliderWidth / 2, sliderWidth, sliderHeigth)
             
-            let myslider = NSBundle.mainBundle().loadNibNamed("CustomSlider", owner: nil, options: nil).last as! CustomSlider
+            myslider = NSBundle.mainBundle().loadNibNamed("CustomSlider", owner: nil, options: nil).last as! CustomSlider
             myslider.frame = sliderFrame
             
             self.view.addSubview(myslider)
@@ -40,5 +42,12 @@ class RootController: UIViewController {
        
     }
     
+    @IBAction func udpateSlider(sender: AnyObject) {
+        if let number = Int(self.tfSliderValue.text!) {
+            if number >= 0 && number <= 100 {
+                self.myslider.updateSlider(number)
+            }
+        }
+    }
    
 }
