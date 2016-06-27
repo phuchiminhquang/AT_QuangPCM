@@ -18,7 +18,6 @@ class RootController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -31,7 +30,7 @@ class RootController: UIViewController {
             
             myslider = NSBundle.mainBundle().loadNibNamed("CustomSlider", owner: nil, options: nil).last as! CustomSlider
             myslider.frame = sliderFrame
-            
+            myslider.delegate = self
             self.view.addSubview(myslider)
             isLoad = true
         }
@@ -50,4 +49,10 @@ class RootController: UIViewController {
         }
     }
    
+}
+
+extension RootController: CustomSliderDelegate {
+    func updateSliderValue(percent: Int) {
+        self.tfSliderValue.text = "\(percent)"
+    }
 }

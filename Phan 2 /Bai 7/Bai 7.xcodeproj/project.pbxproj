@@ -16,6 +16,7 @@
 		0B2865391D1E2F5A003FC0B6 /* CalculatorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2865371D1E2F5A003FC0B6 /* CalculatorController.xib */; };
 		0B28653B1D1E30E2003FC0B6 /* CustomCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B28653A1D1E30E2003FC0B6 /* CustomCalculator.swift */; };
 		0B28653D1D1E30EF003FC0B6 /* CustomCalculator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B28653C1D1E30EF003FC0B6 /* CustomCalculator.xib */; };
+		0B4F16C21D20E4BD00C196AE /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F16C11D20E4BD00C196AE /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0B2865371D1E2F5A003FC0B6 /* CalculatorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalculatorController.xib; sourceTree = "<group>"; };
 		0B28653A1D1E30E2003FC0B6 /* CustomCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCalculator.swift; sourceTree = "<group>"; };
 		0B28653C1D1E30EF003FC0B6 /* CustomCalculator.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCalculator.xib; sourceTree = "<group>"; };
+		0B4F16C11D20E4BD00C196AE /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				0B2865371D1E2F5A003FC0B6 /* CalculatorController.xib */,
 				0B28653A1D1E30E2003FC0B6 /* CustomCalculator.swift */,
 				0B28653C1D1E30EF003FC0B6 /* CustomCalculator.xib */,
+				0B4F16C11D20E4BD00C196AE /* Calculator.swift */,
 			);
 			path = "Bai 7";
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				0B2865271D1E2EAD003FC0B6 /* ViewController.swift in Sources */,
 				0B2865381D1E2F5A003FC0B6 /* CalculatorController.swift in Sources */,
 				0B28653B1D1E30E2003FC0B6 /* CustomCalculator.swift in Sources */,
+				0B4F16C21D20E4BD00C196AE /* Calculator.swift in Sources */,
 				0B2865251D1E2EAD003FC0B6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +308,7 @@
 				0B2865351D1E2EAD003FC0B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

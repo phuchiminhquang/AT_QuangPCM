@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B4F16BC1D20E1BE00C196AE /* CustomSliderVer2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F16BB1D20E1BE00C196AE /* CustomSliderVer2.swift */; };
+		0B4F16BE1D20E1CD00C196AE /* CustomSliderVer2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B4F16BD1D20E1CD00C196AE /* CustomSliderVer2.xib */; };
 		0B93861F1D1D204C0007FE08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B93861E1D1D204C0007FE08 /* AppDelegate.swift */; };
 		0B9386261D1D204C0007FE08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B9386251D1D204C0007FE08 /* Assets.xcassets */; };
 		0B9386291D1D204C0007FE08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B9386271D1D204C0007FE08 /* LaunchScreen.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B4F16BB1D20E1BE00C196AE /* CustomSliderVer2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSliderVer2.swift; sourceTree = "<group>"; };
+		0B4F16BD1D20E1CD00C196AE /* CustomSliderVer2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSliderVer2.xib; sourceTree = "<group>"; };
 		0B93861B1D1D204C0007FE08 /* Bai 6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bai 6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B93861E1D1D204C0007FE08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B9386251D1D204C0007FE08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				0B9386311D1D208F0007FE08 /* RootController.xib */,
 				0B93863A1D1D25270007FE08 /* CustomSlider.swift */,
 				0B93863C1D1D25430007FE08 /* CustomSlider.xib */,
+				0B4F16BB1D20E1BE00C196AE /* CustomSliderVer2.swift */,
+				0B4F16BD1D20E1CD00C196AE /* CustomSliderVer2.xib */,
 			);
 			path = "Bai 6";
 			sourceTree = "<group>";
@@ -130,6 +136,7 @@
 			files = (
 				0B9386291D1D204C0007FE08 /* LaunchScreen.storyboard in Resources */,
 				0B9386261D1D204C0007FE08 /* Assets.xcassets in Resources */,
+				0B4F16BE1D20E1CD00C196AE /* CustomSliderVer2.xib in Resources */,
 				0B9386331D1D208F0007FE08 /* RootController.xib in Resources */,
 				0B93863D1D1D25430007FE08 /* CustomSlider.xib in Resources */,
 			);
@@ -144,6 +151,7 @@
 			files = (
 				0B93861F1D1D204C0007FE08 /* AppDelegate.swift in Sources */,
 				0B93863B1D1D25270007FE08 /* CustomSlider.swift in Sources */,
+				0B4F16BC1D20E1BE00C196AE /* CustomSliderVer2.swift in Sources */,
 				0B9386321D1D208F0007FE08 /* RootController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +296,7 @@
 				0B93862F1D1D204C0007FE08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

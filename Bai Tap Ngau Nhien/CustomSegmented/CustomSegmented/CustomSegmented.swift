@@ -61,8 +61,17 @@ class CustomSegmented: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
          selectedSegment = viewA
+        setBorder(viewA)
+
     }
     
+    func setBorder(view: UIView) {
+        view.layer.borderWidth = 1.0
+        view.layer.cornerRadius = 10.0
+        view.layer.masksToBounds = true
+        view.layer.borderColor = UIColor.brownColor().CGColor
+        view.clipsToBounds = true
+    }
     
     
 

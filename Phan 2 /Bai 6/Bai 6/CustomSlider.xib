@@ -12,36 +12,34 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iiz-AE-H5A">
-                    <rect key="frame" x="37" y="0.0" width="5" height="177"/>
-                    <color key="backgroundColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="38" y="0.0" width="4" height="172"/>
+                    <color key="backgroundColor" red="0.75294117647058822" green="0.75686274509803919" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="5" id="LNn-AF-jXS"/>
+                        <constraint firstAttribute="width" constant="4" id="LNn-AF-jXS"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUd-xQ-Hte">
-                    <rect key="frame" x="37" y="207" width="5" height="93"/>
+                    <rect key="frame" x="38" y="207" width="4" height="93"/>
                     <color key="backgroundColor" red="0.25882352941176473" green="0.83529411764705885" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="5" id="Heg-06-uR1"/>
+                        <constraint firstAttribute="width" constant="4" id="Heg-06-uR1"/>
                         <constraint firstAttribute="height" constant="93" id="gJF-zV-hyP"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEO-Je-dXb">
-                    <rect key="frame" x="25" y="177" width="30" height="30"/>
+                    <rect key="frame" x="23" y="172" width="35" height="35"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gME-zs-5gx">
-                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                            <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" red="0.37636001060000002" green="0.62909943859999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="1Ox-ta-pcC"/>
+                        <constraint firstAttribute="height" constant="35" id="1Ox-ta-pcC"/>
                         <constraint firstItem="gME-zs-5gx" firstAttribute="leading" secondItem="PEO-Je-dXb" secondAttribute="leading" id="DWc-eZ-AbU"/>
                         <constraint firstAttribute="bottom" secondItem="gME-zs-5gx" secondAttribute="bottom" id="SWq-q9-Ky3"/>
-                        <constraint firstAttribute="width" constant="30" id="ShU-EZ-b6l"/>
+                        <constraint firstAttribute="width" constant="35" id="ShU-EZ-b6l"/>
                         <constraint firstItem="gME-zs-5gx" firstAttribute="top" secondItem="PEO-Je-dXb" secondAttribute="top" id="VPD-wW-nmk"/>
                         <constraint firstAttribute="trailing" secondItem="gME-zs-5gx" secondAttribute="trailing" id="VhJ-uK-l58"/>
                     </constraints>
