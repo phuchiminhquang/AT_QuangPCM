@@ -63,7 +63,7 @@
                 <outlet property="lbSliderValue" destination="gME-zs-5gx" id="2ce-AY-uLD"/>
                 <outlet property="upView" destination="Iiz-AE-H5A" id="gcD-lP-F09"/>
             </connections>
-            <point key="canvasLocation" x="407.5" y="473.5"/>
+            <point key="canvasLocation" x="388" y="515"/>
         </view>
     </objects>
 </document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootController" customModule="Bai_7" customModuleProvider="target">
+            <connections>
+                <outlet property="valueSliderTF" destination="dc1-fn-asW" id="eNo-6C-7qK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dc1-fn-asW">
+                    <rect key="frame" x="112" y="110" width="97" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="97" id="AhQ-7N-5KK"/>
+                        <constraint firstAttribute="height" constant="30" id="kXB-PE-dyo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVO-jq-Ubq">
+                    <rect key="frame" x="137" y="148" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="DkK-Gv-oOM"/>
+                        <constraint firstAttribute="width" constant="46" id="Pc3-bS-IlK"/>
+                    </constraints>
+                    <state key="normal" title="OK"/>
+                    <connections>
+                        <action selector="updateSlider:" destination="-1" eventType="touchUpInside" id="gQP-Ze-kOW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dc1-fn-asW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9HC-aT-v9O"/>
+                <constraint firstItem="PVO-jq-Ubq" firstAttribute="top" secondItem="dc1-fn-asW" secondAttribute="bottom" constant="8" id="GNG-zs-q4m"/>
+                <constraint firstItem="dc1-fn-asW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="110" id="cY7-f7-XCn"/>
+                <constraint firstItem="PVO-jq-Ubq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xAY-dq-DHP"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="308" y="435"/>
+        </view>
+    </objects>
+</document>

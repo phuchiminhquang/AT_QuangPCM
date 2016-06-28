@@ -45,6 +45,11 @@ class RootController: UIViewController {
             col += 1
         }
     }
+    
+    // MARK: private function
+    func showAvatar() {
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

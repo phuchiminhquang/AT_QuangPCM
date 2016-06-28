@@ -53,9 +53,8 @@ class CustomSlider: UIView {
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if let touch: UITouch = touches.first! as UITouch {
-            if touch.view == centerView {
-                lastLocation = touch.locationInView(self)
-            } else if touch.view == upView || touch.view == downView {
+            if touch.view == centerView || touch.view == upView || touch.view == downView {
+              
                 let newLocation = touch.locationInView(self)
                 let changeValue = self.frame.height - newLocation.y - self.centerView.frame.width / 2
 
@@ -89,7 +88,6 @@ class CustomSlider: UIView {
         if let touch: UITouch = touches.first! as UITouch {
             if touch.view == centerView {
                 let newLocation = touch.locationInView(self)
-//        newLocation.y >= self.centerView.frame.width / 2 && newLocation.y <= CGRectGetHeight(self.frame) - self.centerView.frame.width / 2
                 
                 let beginPoint = self.centerView.frame.height / 2
                 let endPoint = self.frame.height - self.centerView.frame.height / 2
