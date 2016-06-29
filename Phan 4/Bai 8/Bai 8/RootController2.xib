@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootController2" customModule="Bai_8" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yyO-jS-Vi4">
+                    <rect key="frame" x="135" y="229" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.25882352939999997" green="0.83529411760000005" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Nfs-Uy-5Yc"/>
+                        <constraint firstAttribute="height" constant="50" id="gas-39-W73"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAm-H6-XIb">
+                    <rect key="frame" x="135" y="289" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.49803921569999998" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Mov-HW-ocF"/>
+                        <constraint firstAttribute="height" constant="50" id="TBi-NE-OUD"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZd-uI-SBY">
+                    <rect key="frame" x="135" y="349" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.1825775754" green="0.46068354239999998" blue="0.88231169870000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="H3N-PP-6cU"/>
+                        <constraint firstAttribute="width" constant="50" id="bdh-UM-G4v"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wAe-S3-173">
+                    <rect key="frame" x="135" y="169" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.88231169870000004" green="0.114600037" blue="0.36286654610000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="IRR-je-GeJ"/>
+                        <constraint firstAttribute="width" constant="50" id="dvY-cz-pj5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fZd-uI-SBY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FJu-84-vgo"/>
+                <constraint firstItem="yyO-jS-Vi4" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-30" id="Ivn-Ph-dpJ"/>
+                <constraint firstItem="fZd-uI-SBY" firstAttribute="top" secondItem="oAm-H6-XIb" secondAttribute="bottom" constant="10" id="aci-dO-PZz"/>
+                <constraint firstItem="yyO-jS-Vi4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bij-RE-kSO"/>
+                <constraint firstItem="yyO-jS-Vi4" firstAttribute="top" secondItem="wAe-S3-173" secondAttribute="bottom" constant="10" id="h19-oV-xji"/>
+                <constraint firstItem="oAm-H6-XIb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="l3a-3S-eNm"/>
+                <constraint firstItem="wAe-S3-173" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sMU-PU-UG5"/>
+                <constraint firstItem="oAm-H6-XIb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="30" id="yS7-kv-xI2"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="277" y="391"/>
+        </view>
+    </objects>
+</document>
