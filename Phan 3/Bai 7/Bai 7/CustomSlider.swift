@@ -25,11 +25,13 @@ class CustomSlider: UIView {
     // MARK: Property
     var lastLocation = CGPoint(x: 0,y: 0)
     var delegate: CustomSliderDelegate!
+    
     var isChange = false
     
     // MARK: Init function for uiview
     override init(frame: CGRect) {
         super.init(frame: frame)
+        print("abc")
     }
     
     required init?(coder aDecoder: NSCoder) {
