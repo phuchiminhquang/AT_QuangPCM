@@ -14,6 +14,11 @@
 		0B3A2EE11D23AB9C0008D175 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A2EDF1D23AB9C0008D175 /* RootController.swift */; };
 		0B3A2EE21D23AB9C0008D175 /* RootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A2EE01D23AB9C0008D175 /* RootController.xib */; };
 		0B3A2EE41D23AD670008D175 /* bg_horse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A2EE31D23AD670008D175 /* bg_horse.jpg */; };
+		0B3A2F091D23C2510008D175 /* RootController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A2F071D23C2510008D175 /* RootController2.swift */; };
+		0B3A2F0A1D23C2510008D175 /* RootController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A2F081D23C2510008D175 /* RootController2.xib */; };
+		0B3A2F0C1D23C44A0008D175 /* bg_blur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A2F0B1D23C44A0008D175 /* bg_blur.jpg */; };
+		0B3A2F0E1D23C4AE0008D175 /* torres.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A2F0D1D23C4AE0008D175 /* torres.jpg */; };
+		0B3A2F121D23C7220008D175 /* arrow-point-to-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A2F111D23C7220008D175 /* arrow-point-to-right.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		0B3A2EDF1D23AB9C0008D175 /* RootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
 		0B3A2EE01D23AB9C0008D175 /* RootController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootController.xib; sourceTree = "<group>"; };
 		0B3A2EE31D23AD670008D175 /* bg_horse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_horse.jpg; sourceTree = "<group>"; };
+		0B3A2F071D23C2510008D175 /* RootController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootController2.swift; sourceTree = "<group>"; };
+		0B3A2F081D23C2510008D175 /* RootController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootController2.xib; sourceTree = "<group>"; };
+		0B3A2F0B1D23C44A0008D175 /* bg_blur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_blur.jpg; sourceTree = "<group>"; };
+		0B3A2F0D1D23C4AE0008D175 /* torres.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = torres.jpg; sourceTree = "<group>"; };
+		0B3A2F111D23C7220008D175 /* arrow-point-to-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-point-to-right.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,9 @@
 		0B3A2ECC1D23AB8A0008D175 /* Bai 10 */ = {
 			isa = PBXGroup;
 			children = (
+				0B3A2F111D23C7220008D175 /* arrow-point-to-right.png */,
+				0B3A2F0D1D23C4AE0008D175 /* torres.jpg */,
+				0B3A2F0B1D23C44A0008D175 /* bg_blur.jpg */,
 				0B3A2EE31D23AD670008D175 /* bg_horse.jpg */,
 				0B3A2ECD1D23AB8A0008D175 /* AppDelegate.swift */,
 				0B3A2ECF1D23AB8A0008D175 /* ViewController.swift */,
@@ -66,6 +79,8 @@
 				0B3A2ED91D23AB8A0008D175 /* Info.plist */,
 				0B3A2EDF1D23AB9C0008D175 /* RootController.swift */,
 				0B3A2EE01D23AB9C0008D175 /* RootController.xib */,
+				0B3A2F071D23C2510008D175 /* RootController2.swift */,
+				0B3A2F081D23C2510008D175 /* RootController2.xib */,
 			);
 			path = "Bai 10";
 			sourceTree = "<group>";
@@ -128,9 +143,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B3A2F0A1D23C2510008D175 /* RootController2.xib in Resources */,
+				0B3A2F0C1D23C44A0008D175 /* bg_blur.jpg in Resources */,
 				0B3A2EE41D23AD670008D175 /* bg_horse.jpg in Resources */,
 				0B3A2ED81D23AB8A0008D175 /* LaunchScreen.storyboard in Resources */,
+				0B3A2F121D23C7220008D175 /* arrow-point-to-right.png in Resources */,
 				0B3A2EE21D23AB9C0008D175 /* RootController.xib in Resources */,
+				0B3A2F0E1D23C4AE0008D175 /* torres.jpg in Resources */,
 				0B3A2ED51D23AB8A0008D175 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +163,7 @@
 			files = (
 				0B3A2ED01D23AB8A0008D175 /* ViewController.swift in Sources */,
 				0B3A2ECE1D23AB8A0008D175 /* AppDelegate.swift in Sources */,
+				0B3A2F091D23C2510008D175 /* RootController2.swift in Sources */,
 				0B3A2EE11D23AB9C0008D175 /* RootController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

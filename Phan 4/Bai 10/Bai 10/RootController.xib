@@ -72,7 +72,7 @@ So when I had a chance to go talk to an actual Apple Engineer about AutoLayout l
                 <constraint firstItem="Xj3-3A-uIy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="scO-nX-bEW"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="254" y="404"/>
+            <point key="canvasLocation" x="239" y="360"/>
         </view>
     </objects>
     <resources>
