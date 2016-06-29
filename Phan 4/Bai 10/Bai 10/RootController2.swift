@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class RootController2: UIViewController {
     
     // MARK: Property

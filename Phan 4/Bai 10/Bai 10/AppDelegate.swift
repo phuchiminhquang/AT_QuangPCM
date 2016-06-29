@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         if let window = window {
-            let root = RootController(nibName: "RootController", bundle: nil)
+            let root = RootController2(nibName: "RootController2", bundle: nil)
 //            let navigation = UINavigationController(rootViewController: root)
             window.rootViewController = root
             
