@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootController" customModule="Bai_10" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_horse.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Xj3-3A-uIy">
+                    <rect key="frame" x="0.0" y="368" width="320" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="dJu-tz-GoC"/>
+                    </constraints>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noo-YF-iaH">
+                    <rect key="frame" x="0.0" y="20" width="320" height="348"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="to3-hb-5M9">
+                            <rect key="frame" x="0.0" y="20" width="320" height="1847"/>
+                            <mutableString key="text">Ok, I’ll admit. I’ve been seriously struggling with AutoLayout ever since it’s been introduced. I understand the concept, and I LOVE the idea of it, but when I actually do it, it almost never behaves as it does in my head.
+
+So when I had a chance to go talk to an actual Apple Engineer about AutoLayout last week at WWDC, I made sure to go. I thought of my most painful experience using AutoLayout recently – when I was making a login screen with username and password fields on a ScrollView (so it scrolls up when the keyboard comes up) – and had the Apple engineer walk me through the example.
+
+Ok, I’ll admit. I’ve been seriously struggling with AutoLayout ever since it’s been introduced. I understand the concept, and I LOVE the idea of it, but when I actually do it, it almost never behaves as it does in my head.
+
+So when I had a chance to go talk to an actual Apple Engineer about AutoLayout last week at WWDC, I made sure to go. I thought of my most painful experience using AutoLayout recently – when I was making a login screen with username and password fields on a ScrollView (so it scrolls up when the keyboard comes up) – and had the Apple engineer walk me through the example.
+
+Ok, I’ll admit. I’ve been seriously struggling with AutoLayout ever since it’s been introduced. I understand the concept, and I LOVE the idea of it, but when I actually do it, it almost never behaves as it does in my head.
+
+So when I had a chance to go talk to an actual Apple Engineer about AutoLayout last week at WWDC, I made sure to go. I thought of my most painful experience using AutoLayout recently – when I was making a login screen with username and password fields on a ScrollView (so it scrolls up when the keyboard comes up) – and had the Apple engineer walk me through the example.
+
+Ok, I’ll admit. I’ve been seriously struggling with AutoLayout ever since it’s been introduced. I understand the concept, and I LOVE the idea of it, but when I actually do it, it almost never behaves as it does in my head.
+
+So when I had a chance to go talk to an actual Apple Engineer about AutoLayout last week at WWDC, I made sure to go. I thought of my most painful experience using AutoLayout recently – when I was making a login screen with username and password fields on a ScrollView (so it scrolls up when the keyboard comes up) – and had the Apple engineer walk me through the example.
+
+Ok, I’ll admit. I’ve been seriously struggling with AutoLayout ever since it’s been introduced. I understand the concept, and I LOVE the idea of it, but when I actually do it, it almost never behaves as it does in my head.
+
+So when I had a chance to go talk to an actual Apple Engineer about AutoLayout last week at WWDC, I made sure to go. I thought of my most painful experience using AutoLayout recently – when I was making a login screen with username and password fields on a ScrollView (so it scrolls up when the keyboard comes up) – and had the Apple engineer walk me through the example.
+
+</mutableString>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="to3-hb-5M9" secondAttribute="bottom" constant="20" id="FJf-Bj-hge"/>
+                        <constraint firstItem="to3-hb-5M9" firstAttribute="top" secondItem="noo-YF-iaH" secondAttribute="top" constant="20" id="VN4-yq-Ykm"/>
+                        <constraint firstAttribute="trailing" secondItem="to3-hb-5M9" secondAttribute="trailing" id="eBO-bq-2rI"/>
+                        <constraint firstItem="to3-hb-5M9" firstAttribute="leading" secondItem="noo-YF-iaH" secondAttribute="leading" id="vNT-oc-Lgv"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Xj3-3A-uIy" secondAttribute="bottom" id="F22-QW-SZC"/>
+                <constraint firstItem="noo-YF-iaH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Lry-Ci-UdG"/>
+                <constraint firstItem="to3-hb-5M9" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Mqc-Qp-vks"/>
+                <constraint firstAttribute="trailing" secondItem="noo-YF-iaH" secondAttribute="trailing" id="Wld-C6-Rzt"/>
+                <constraint firstItem="noo-YF-iaH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cS8-89-fak"/>
+                <constraint firstAttribute="trailing" secondItem="Xj3-3A-uIy" secondAttribute="trailing" id="f51-dH-v5X"/>
+                <constraint firstItem="Xj3-3A-uIy" firstAttribute="top" secondItem="noo-YF-iaH" secondAttribute="bottom" id="ixG-v9-MbW"/>
+                <constraint firstItem="Xj3-3A-uIy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="scO-nX-bEW"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="254" y="404"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_horse.jpg" width="284" height="177"/>
+    </resources>
+</document>
