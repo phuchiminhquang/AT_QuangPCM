@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="114" id="KGk-i7-Jjw" customClass="CustomTableViewCell" customModule="Bai_4" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="torres.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tcy-th-qK5">
+                        <rect key="frame" x="16" y="15" width="49" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="tcy-th-qK5" secondAttribute="height" multiplier="1:1" id="GJ3-GZ-dqW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quang Phu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5N-ba-dIF">
+                        <rect key="frame" x="65" y="15" width="255" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age: 23          Gender:  Male" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tc4-aG-yLG">
+                        <rect key="frame" x="85" y="48" width="215" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Tc4-aG-yLG" firstAttribute="leading" secondItem="tcy-th-qK5" secondAttribute="trailing" constant="20" id="3x4-Yx-PK2"/>
+                    <constraint firstItem="j5N-ba-dIF" firstAttribute="leading" secondItem="tcy-th-qK5" secondAttribute="trailing" id="8qP-6d-4bZ"/>
+                    <constraint firstItem="tcy-th-qK5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="CRe-u2-tKM"/>
+                    <constraint firstAttribute="bottom" secondItem="tcy-th-qK5" secondAttribute="bottom" constant="15" id="DIE-PQ-TKG"/>
+                    <constraint firstAttribute="trailing" secondItem="Tc4-aG-yLG" secondAttribute="trailing" constant="20" id="Eq2-zf-v4w"/>
+                    <constraint firstAttribute="trailing" secondItem="j5N-ba-dIF" secondAttribute="trailing" id="bMr-qI-TKW"/>
+                    <constraint firstItem="tcy-th-qK5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="dCE-hb-rdP"/>
+                    <constraint firstItem="Tc4-aG-yLG" firstAttribute="top" secondItem="j5N-ba-dIF" secondAttribute="bottom" priority="750" constant="15" id="evd-V1-4n4"/>
+                    <constraint firstItem="j5N-ba-dIF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="v3I-SW-kMU"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Tc4-aG-yLG" secondAttribute="bottom" constant="10" id="vzf-mb-rD4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="infoLabel" destination="Tc4-aG-yLG" id="zrO-61-Wam"/>
+                <outlet property="nameLabel" destination="j5N-ba-dIF" id="DSw-DO-WjR"/>
+                <outlet property="photoImageView" destination="tcy-th-qK5" id="eDv-SQ-ZX3"/>
+            </connections>
+            <point key="canvasLocation" x="290" y="356"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="torres.jpg" width="600" height="430"/>
+    </resources>
+</document>
