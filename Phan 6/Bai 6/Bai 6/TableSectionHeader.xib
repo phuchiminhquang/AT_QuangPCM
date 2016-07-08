@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TableSectionHeader" customModule="Bai_6" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="315" height="111"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sr2-D1-OKe">
+                    <rect key="frame" x="0.0" y="0.0" width="315" height="111"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QqK-Oo-PGv">
+                            <rect key="frame" x="79" y="7" width="97" height="97"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="QqK-Oo-PGv" secondAttribute="height" multiplier="1:1" id="GuC-ut-VNh"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pld-XN-NNR">
+                            <rect key="frame" x="191" y="45" width="57" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.42352941179999998" green="0.81960784310000001" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Pld-XN-NNR" firstAttribute="leading" secondItem="QqK-Oo-PGv" secondAttribute="trailing" constant="15" id="6Qv-3t-FHB"/>
+                        <constraint firstItem="QqK-Oo-PGv" firstAttribute="centerX" secondItem="sr2-D1-OKe" secondAttribute="centerX" constant="-30" id="EK5-ms-d7i"/>
+                        <constraint firstAttribute="bottom" secondItem="QqK-Oo-PGv" secondAttribute="bottom" constant="7" id="e6l-ap-6N8"/>
+                        <constraint firstItem="Pld-XN-NNR" firstAttribute="centerY" secondItem="sr2-D1-OKe" secondAttribute="centerY" id="uVW-4c-jtd"/>
+                        <constraint firstItem="QqK-Oo-PGv" firstAttribute="top" secondItem="sr2-D1-OKe" secondAttribute="top" constant="7" id="xOp-Yh-n4Z"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="sr2-D1-OKe" secondAttribute="trailing" id="BqJ-RU-jGH"/>
+                <constraint firstItem="sr2-D1-OKe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Np0-8s-beU"/>
+                <constraint firstAttribute="bottom" secondItem="sr2-D1-OKe" secondAttribute="bottom" id="a1l-0v-aLT"/>
+                <constraint firstItem="sr2-D1-OKe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kN7-o8-DVK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="photoHeader" destination="QqK-Oo-PGv" id="wi1-yZ-thq"/>
+                <outlet property="titleHeader" destination="Pld-XN-NNR" id="HTh-iu-Hqi"/>
+            </connections>
+            <point key="canvasLocation" x="300.5" y="417.5"/>
+        </view>
+    </objects>
+</document>
