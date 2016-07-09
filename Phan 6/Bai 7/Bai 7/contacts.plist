@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>A</key>
+	<dict>
+		<key>A1</key>
+		<string>1</string>
+		<key>A2</key>
+		<string>2</string>
+		<key>A3</key>
+		<string>3</string>
+		<key>A4</key>
+		<string>4</string>
+		<key>A5</key>
+		<string>5</string>
+	</dict>
+	<key>B</key>
+	<dict>
+		<key>B</key>
+		<string>1</string>
+		<key>B - 2</key>
+		<string>1</string>
+		<key>B - 3</key>
+		<string>1</string>
+		<key>B - 4</key>
+		<string>1</string>
+		<key>B - 5</key>
+		<string>1</string>
+		<key>B - 6</key>
+		<string>1</string>
+	</dict>
+	<key>E</key>
+	<dict>
+		<key>E</key>
+		<string>1</string>
+		<key>E - 2</key>
+		<string>1</string>
+		<key>E - 3</key>
+		<string>1</string>
+		<key>E - 4</key>
+		<string>1</string>
+		<key>E - 5</key>
+		<string>1</string>
+		<key>E - 6</key>
+		<string>1</string>
+		<key>E - 7</key>
+		<string>1</string>
+		<key>E - 8</key>
+		<string>1</string>
+	</dict>
+	<key>G</key>
+	<dict>
+		<key>E</key>
+		<string>1</string>
+		<key>E - 2</key>
+		<string>1</string>
+		<key>E - 3</key>
+		<string>1</string>
+		<key>E - 4</key>
+		<string>1</string>
+		<key>E - 5</key>
+		<string>1</string>
+		<key>E - 6</key>
+		<string>1</string>
+		<key>E - 7</key>
+		<string>1</string>
+		<key>E - 8</key>
+		<string>1</string>
+		<key>E - 9</key>
+		<string>1</string>
+		<key>E - 10</key>
+		<string>1</string>
+		<key>E - 11</key>
+		<string>1</string>
+	</dict>
+	<key>K</key>
+	<dict>
+		<key>K</key>
+		<string>1</string>
+		<key>K - 2</key>
+		<string>1</string>
+		<key>K - 3</key>
+		<string>1</string>
+		<key>K - 4</key>
+		<string>1</string>
+		<key>K - 5</key>
+		<string>1</string>
+		<key>K - 6</key>
+		<string>1</string>
+		<key>K - 7</key>
+		<string>1</string>
+		<key>K - 8</key>
+		<string>1</string>
+		<key>K - 9</key>
+		<string>1</string>
+		<key>K - 10</key>
+		<string>1</string>
+		<key>K - 11</key>
+		<string>1</string>
+		<key>K - 12</key>
+		<string>1</string>
+		<key>K - 13</key>
+		<string>1</string>
+		<key>K - 14</key>
+		<string>1</string>
+		<key>K - 15</key>
+		<string>1</string>
+	</dict>
+	<key>X</key>
+	<dict>
+		<key>X</key>
+		<string>1</string>
+		<key>X - 2</key>
+		<string>1</string>
+		<key>X - 3</key>
+		<string>1</string>
+		<key>X - 4</key>
+		<string>1</string>
+		<key>X - 5</key>
+		<string>1</string>
+		<key>X - 6</key>
+		<string>1</string>
+		<key>X - 7</key>
+		<string>1</string>
+		<key>X - 8</key>
+		<string>1</string>
+		<key>X - 9</key>
+		<string>1</string>
+		<key>X - 10</key>
+		<string>1</string>
+		<key>X - 11</key>
+		<string>1</string>
+		<key>X - 12</key>
+		<string>1</string>
+		<key>X - 13</key>
+		<string>1</string>
+		<key>X - 14</key>
+		<string>1</string>
+	</dict>
+	<key>Z</key>
+	<dict>
+		<key>Z</key>
+		<string>21312</string>
+		<key>Z - 2</key>
+		<string>21312</string>
+		<key>Z - 3</key>
+		<string>21312</string>
+		<key>Z - 4</key>
+		<string>21312</string>
+		<key>Z - 5</key>
+		<string>21312</string>
+		<key>Z - 6</key>
+		<string>21312</string>
+		<key>Z - 7</key>
+		<string>21312</string>
+		<key>Z - 8</key>
+		<string>21312</string>
+		<key>Z - 9</key>
+		<string>21312</string>
+		<key>Z - 10</key>
+		<string>21312</string>
+		<key>Z - 11</key>
+		<string>21312</string>
+		<key>Z - 12</key>
+		<string>21312</string>
+		<key>Z - 13</key>
+		<string>21312</string>
+		<key>Z - 14</key>
+		<string>21312</string>
+		<key>Z - 15</key>
+		<string>21312</string>
+		<key>Z - 16</key>
+		<string>21312</string>
+		<key>Z - 17</key>
+		<string>21312</string>
+		<key>Z - 18</key>
+		<string>21312</string>
+		<key>Z - 19</key>
+		<string>21312</string>
+		<key>Z - 20</key>
+		<string>21312</string>
+		<key>Z - 21</key>
+		<string>21312</string>
+		<key>Z - 22</key>
+		<string>21312</string>
+		<key>Z - 23</key>
+		<string>21312</string>
+		<key>Z - 24</key>
+		<string>21312</string>
+		<key>Z - 25</key>
+		<string>21312</string>
+		<key>Z - 26</key>
+		<string>21312</string>
+		<key>Z - 27</key>
+		<string>21312</string>
+		<key>Z - 28</key>
+		<string>21312</string>
+	</dict>
+</dict>
+</plist>
