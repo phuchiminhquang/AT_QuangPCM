@@ -8,10 +8,10 @@ var str = "Hello, playground"
 let dateFormatter = NSDateFormatter()
 
 dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-var dateAsString = "2016-03-01 12:00:00"
+var dateAsString = "2016-03-30 12:00:12"
 var date1 = dateFormatter.dateFromString(dateAsString)!
 
-dateAsString = "2016-05-02 12:00:00"
+dateAsString = "2016-05-23 12:00:00"
 var date2 = dateFormatter.dateFromString(dateAsString)!
 
 var diffDateComponents = NSCalendar.currentCalendar().components([NSCalendarUnit.Year, NSCalendarUnit.Month, NSCalendarUnit.Day, NSCalendarUnit.Hour, NSCalendarUnit.Minute, NSCalendarUnit.Second], fromDate: date1, toDate: date2, options: NSCalendarOptions.init(rawValue: 0))

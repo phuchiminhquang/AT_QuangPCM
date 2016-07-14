@@ -19,3 +19,12 @@ struct MyColor {
     static let borderGrayColor = UIColor(red: 192/255, green: 192/255, blue: 192/255, alpha: 1)
     
 }
+
+
+struct ButtonSize {
+    static let ratingButton = CGSize(width: 30, height: 30)
+}
+
+//struct Location {
+//    static let
+//}
