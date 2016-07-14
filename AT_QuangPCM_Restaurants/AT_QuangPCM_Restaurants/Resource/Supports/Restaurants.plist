@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Phi Lu</key>
+	<dict>
+		<key>maptitle</key>
+		<string>Current Location</string>
+		<key>mapsubtitle</key>
+		<string>Phi Lu -  1 Thai Thi Boi</string>
+		<key>maplocation</key>
+		<dict>
+			<key>x</key>
+			<integer>120</integer>
+			<key>y</key>
+			<integer>120</integer>
+		</dict>
+		<key>photo</key>
+		<string>bg_res1</string>
+		<key>address</key>
+		<string>1 Thai Thi Boi</string>
+		<key>foodphotos</key>
+		<array>
+			<string>bg_res1_food1</string>
+			<string>bg_res1_food2</string>
+			<string>bg_res1_food3</string>
+		</array>
+		<key>introduce</key>
+		<string>1. Pizza Hut 
+Pizza luôn là món gây kích thích thị giác nhất thế giới, tưởng tượng những miếng bánh pizza cuộn tròn em phô mai béo ngậy, thêm topping hải sản nữa là bá chấy bọ chét luôn. Xem là muốn ngoạm luôn cái màn hình !! 2. Kem Cá Ù Pa
+Quán này mới hot gần đây với món kem cá giá rẻ chỉ từ 13k, đã vậy còn có cây kem thử thách thần thánh. Hỏi sao không lọt top được check in được nhỉ ? 3. Chè khúc bạch Thanh
+Khúc bạch ở đây có nhiều hương vị lắm, mỗi hương vị một màu nên là lên insta hình đẹp bá cháy luôn. Đã vậy còn ngon nên được rất nhiều bạn check in tháng này nhé. 4. Aeon Bình Tân
+Đoàn binh Pikachu, con đường hoa anh đào cộng với hàng ngàn món ăn hấp dẫn đã làm cho Aeon Bình Tân nóng hơn bao giờ hết. Nhìn mấy em kem trà xanh kìa. Ngon xỉu ấy nhỉ ? 5. Heo Đỏ quán
+Mấy món Hàn quốc khi nào cũng lên hình đẹp ác liệt, nhìn là muốn bơi vô ngay và luôn ấy. Quán này bán ngon mà rẻ nữa nè. 6. Bingsu Seol Hwa
+Mùa hè nóng nực thì Bingsu chà bá là toẹt vời luôn, bảo sao các bạn ầm ầm check in . Quán này có nhiều loại bingsu lạ nữa nè cả nhà. 8. Tiệm bánh Bia Bơ
+Tiệm này toàn bánh ngon thôi các bạn à, bánh nào nhìn cũng ngon cũng lạ hết, qua ăn thử bánh dừa tắc liền nè. 10. Khu ăn vặt công viên Thiên Phước
+Khu ăn vặt này mới nổi à, mà lên vùn vụt trên insta luôn, nào là soup cua, bánh bạch tuộc, trà đào, tá lả luôn. Toàn món hot thôi á. </string>
+	</dict>
+	<key>Bia Gao</key>
+	<dict>
+		<key>maptitle</key>
+		<string>Current Location</string>
+		<key>mapsubtitle</key>
+		<string>Bia Gao -  355 Dien Bien Phu</string>
+		<key>maplocation</key>
+		<dict>
+			<key>x</key>
+			<integer>150</integer>
+			<key>y</key>
+			<integer>150</integer>
+		</dict>
+		<key>photo</key>
+		<string>bg_res2</string>
+		<key>address</key>
+		<string>355 Dien Bien Phu</string>
+		<key>foodphotos</key>
+		<array>
+			<string>bg_res2_food1</string>
+			<string>bg_res2_food2</string>
+			<string>bg_res2_food3</string>
+		</array>
+		<key>introduce</key>
+		<string>1. Pizza Hut 
+Pizza luôn là món gây kích thích thị giác nhất thế giới, tưởng tượng những miếng bánh pizza cuộn tròn em phô mai béo ngậy, thêm topping hải sản nữa là bá chấy bọ chét luôn. Xem là muốn ngoạm luôn cái màn hình !! 2. Kem Cá Ù Pa
+Quán này mới hot gần đây với món kem cá giá rẻ chỉ từ 13k, đã vậy còn có cây kem thử thách thần thánh. Hỏi sao không lọt top được check in được nhỉ ? 3. Chè khúc bạch Thanh
+Khúc bạch ở đây có nhiều hương vị lắm, mỗi hương vị một màu nên là lên insta hình đẹp bá cháy luôn. Đã vậy còn ngon nên được rất nhiều bạn check in tháng này nhé. 4. Aeon Bình Tân
+Đoàn binh Pikachu, con đường hoa anh đào cộng với hàng ngàn món ăn hấp dẫn đã làm cho Aeon Bình Tân nóng hơn bao giờ hết. Nhìn mấy em kem trà xanh kìa. Ngon xỉu ấy nhỉ ? 5. Heo Đỏ quán
+Mấy món Hàn quốc khi nào cũng lên hình đẹp ác liệt, nhìn là muốn bơi vô ngay và luôn ấy. Quán này bán ngon mà rẻ nữa nè. 6. Bingsu Seol Hwa
+Mùa hè nóng nực thì Bingsu chà bá là toẹt vời luôn, bảo sao các bạn ầm ầm check in . Quán này có nhiều loại bingsu lạ nữa nè cả nhà. 8. Tiệm bánh Bia Bơ
+Tiệm này toàn bánh ngon thôi các bạn à, bánh nào nhìn cũng ngon cũng lạ hết, qua ăn thử bánh dừa tắc liền nè. 10. Khu ăn vặt công viên Thiên Phước
+Khu ăn vặt này mới nổi à, mà lên vùn vụt trên insta luôn, nào là soup cua, bánh bạch tuộc, trà đào, tá lả luôn. Toàn món hot thôi á. </string>
+	</dict>
+	<key>Pizza Hurt</key>
+	<dict>
+		<key>maptitle</key>
+		<string>Current Location</string>
+		<key>mapsubtitle</key>
+		<string>Pizza Hurt - 20 Le Duan</string>
+		<key>maplocation</key>
+		<dict>
+			<key>x</key>
+			<integer>200</integer>
+			<key>y</key>
+			<integer>250</integer>
+		</dict>
+		<key>photo</key>
+		<string>bg_res3</string>
+		<key>address</key>
+		<string>20 Le Duan</string>
+		<key>foodphotos</key>
+		<array>
+			<string>bg_res3_food1</string>
+			<string>bg_res3_food2</string>
+			<string>bg_res3_food3</string>
+		</array>
+		<key>introduce</key>
+		<string>1. Pizza Hut 
+Pizza luôn là món gây kích thích thị giác nhất thế giới, tưởng tượng những miếng bánh pizza cuộn tròn em phô mai béo ngậy, thêm topping hải sản nữa là bá chấy bọ chét luôn. Xem là muốn ngoạm luôn cái màn hình !! 2. Kem Cá Ù Pa
+Quán này mới hot gần đây với món kem cá giá rẻ chỉ từ 13k, đã vậy còn có cây kem thử thách thần thánh. Hỏi sao không lọt top được check in được nhỉ ? 3. Chè khúc bạch Thanh
+Khúc bạch ở đây có nhiều hương vị lắm, mỗi hương vị một màu nên là lên insta hình đẹp bá cháy luôn. Đã vậy còn ngon nên được rất nhiều bạn check in tháng này nhé. 4. Aeon Bình Tân
+Đoàn binh Pikachu, con đường hoa anh đào cộng với hàng ngàn món ăn hấp dẫn đã làm cho Aeon Bình Tân nóng hơn bao giờ hết. Nhìn mấy em kem trà xanh kìa. Ngon xỉu ấy nhỉ ? 5. Heo Đỏ quán
+Mấy món Hàn quốc khi nào cũng lên hình đẹp ác liệt, nhìn là muốn bơi vô ngay và luôn ấy. Quán này bán ngon mà rẻ nữa nè. 6. Bingsu Seol Hwa
+Mùa hè nóng nực thì Bingsu chà bá là toẹt vời luôn, bảo sao các bạn ầm ầm check in . Quán này có nhiều loại bingsu lạ nữa nè cả nhà. 8. Tiệm bánh Bia Bơ
+Tiệm này toàn bánh ngon thôi các bạn à, bánh nào nhìn cũng ngon cũng lạ hết, qua ăn thử bánh dừa tắc liền nè. 10. Khu ăn vặt công viên Thiên Phước
+Khu ăn vặt này mới nổi à, mà lên vùn vụt trên insta luôn, nào là soup cua, bánh bạch tuộc, trà đào, tá lả luôn. Toàn món hot thôi á. </string>
+	</dict>
+	<key>Ot Xanh</key>
+	<dict>
+		<key>maptitle</key>
+		<string>Current Location</string>
+		<key>mapsubtitle</key>
+		<string>Ot Xanh -  20 Le Duan</string>
+		<key>maplocation</key>
+		<dict>
+			<key>x</key>
+			<integer>188</integer>
+			<key>y</key>
+			<integer>205</integer>
+		</dict>
+		<key>photo</key>
+		<string>bg_res3</string>
+		<key>address</key>
+		<string>20 Le Duan</string>
+		<key>foodphotos</key>
+		<array>
+			<string>bg_res3_food1</string>
+			<string>bg_res3_food2</string>
+			<string>bg_res3_food3</string>
+		</array>
+		<key>introduce</key>
+		<string>1. Pizza Hut 
+Pizza luôn là món gây kích thích thị giác nhất thế giới, tưởng tượng những miếng bánh pizza cuộn tròn em phô mai béo ngậy, thêm topping hải sản nữa là bá chấy bọ chét luôn. Xem là muốn ngoạm luôn cái màn hình !! 2. Kem Cá Ù Pa
+Quán này mới hot gần đây với món kem cá giá rẻ chỉ từ 13k, đã vậy còn có cây kem thử thách thần thánh. Hỏi sao không lọt top được check in được nhỉ ? 3. Chè khúc bạch Thanh
+Khúc bạch ở đây có nhiều hương vị lắm, mỗi hương vị một màu nên là lên insta hình đẹp bá cháy luôn. Đã vậy còn ngon nên được rất nhiều bạn check in tháng này nhé. 4. Aeon Bình Tân
+Đoàn binh Pikachu, con đường hoa anh đào cộng với hàng ngàn món ăn hấp dẫn đã làm cho Aeon Bình Tân nóng hơn bao giờ hết. Nhìn mấy em kem trà xanh kìa. Ngon xỉu ấy nhỉ ? 5. Heo Đỏ quán
+Mấy món Hàn quốc khi nào cũng lên hình đẹp ác liệt, nhìn là muốn bơi vô ngay và luôn ấy. Quán này bán ngon mà rẻ nữa nè. 6. Bingsu Seol Hwa
+Mùa hè nóng nực thì Bingsu chà bá là toẹt vời luôn, bảo sao các bạn ầm ầm check in . Quán này có nhiều loại bingsu lạ nữa nè cả nhà. 8. Tiệm bánh Bia Bơ
+Tiệm này toàn bánh ngon thôi các bạn à, bánh nào nhìn cũng ngon cũng lạ hết, qua ăn thử bánh dừa tắc liền nè. 10. Khu ăn vặt công viên Thiên Phước
+Khu ăn vặt này mới nổi à, mà lên vùn vụt trên insta luôn, nào là soup cua, bánh bạch tuộc, trà đào, tá lả luôn. Toàn món hot thôi á. </string>
+	</dict>
+	<key>Tao Do</key>
+	<dict>
+		<key>maptitle</key>
+		<string>Current Location</string>
+		<key>mapsubtitle</key>
+		<string>Tao Do -  234 Pham Van Dong</string>
+		<key>maplocation</key>
+		<dict>
+			<key>x</key>
+			<integer>200</integer>
+			<key>y</key>
+			<integer>854</integer>
+		</dict>
+		<key>photo</key>
+		<string>bg_res2</string>
+		<key>address</key>
+		<string>234 Pham Van Dong</string>
+		<key>foodphotos</key>
+		<array>
+			<string>bg_res2_food1</string>
+			<string>bg_res1_food3</string>
+			<string>bg_res2_food3</string>
+		</array>
+		<key>introduce</key>
+		<string>1. Pizza Hut 
+Pizza luôn là món gây kích thích thị giác nhất thế giới, tưởng tượng những miếng bánh pizza cuộn tròn em phô mai béo ngậy, thêm topping hải sản nữa là bá chấy bọ chét luôn. Xem là muốn ngoạm luôn cái màn hình !! 2. Kem Cá Ù Pa
+Quán này mới hot gần đây với món kem cá giá rẻ chỉ từ 13k, đã vậy còn có cây kem thử thách thần thánh. Hỏi sao không lọt top được check in được nhỉ ? 3. Chè khúc bạch Thanh
+Khúc bạch ở đây có nhiều hương vị lắm, mỗi hương vị một màu nên là lên insta hình đẹp bá cháy luôn. Đã vậy còn ngon nên được rất nhiều bạn check in tháng này nhé. 4. Aeon Bình Tân
+Đoàn binh Pikachu, con đường hoa anh đào cộng với hàng ngàn món ăn hấp dẫn đã làm cho Aeon Bình Tân nóng hơn bao giờ hết. Nhìn mấy em kem trà xanh kìa. Ngon xỉu ấy nhỉ ? 5. Heo Đỏ quán
+Mấy món Hàn quốc khi nào cũng lên hình đẹp ác liệt, nhìn là muốn bơi vô ngay và luôn ấy. Quán này bán ngon mà rẻ nữa nè. 6. Bingsu Seol Hwa
+Mùa hè nóng nực thì Bingsu chà bá là toẹt vời luôn, bảo sao các bạn ầm ầm check in . Quán này có nhiều loại bingsu lạ nữa nè cả nhà. 8. Tiệm bánh Bia Bơ
+Tiệm này toàn bánh ngon thôi các bạn à, bánh nào nhìn cũng ngon cũng lạ hết, qua ăn thử bánh dừa tắc liền nè. 10. Khu ăn vặt công viên Thiên Phước
+Khu ăn vặt này mới nổi à, mà lên vùn vụt trên insta luôn, nào là soup cua, bánh bạch tuộc, trà đào, tá lả luôn. Toàn món hot thôi á. </string>
+	</dict>
+</dict>
+</plist>

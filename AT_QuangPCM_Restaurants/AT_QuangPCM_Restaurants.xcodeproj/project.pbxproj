@@ -7,21 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B4C64241D373EB100A2923A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C64231D373EB100A2923A /* AppDelegate.swift */; };
-		0B4C64261D373EB100A2923A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C64251D373EB100A2923A /* ViewController.swift */; };
-		0B4C64291D373EB100A2923A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4C64271D373EB100A2923A /* Main.storyboard */; };
-		0B4C642B1D373EB100A2923A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B4C642A1D373EB100A2923A /* Assets.xcassets */; };
-		0B4C642E1D373EB200A2923A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4C642C1D373EB200A2923A /* LaunchScreen.storyboard */; };
+		0B4C644C1D373F1500A2923A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C64371D373F1500A2923A /* AppDelegate.swift */; };
+		0B4C644D1D373F1500A2923A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C64381D373F1500A2923A /* ViewController.swift */; };
+		0B4C644E1D373F1500A2923A /* FavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C643A1D373F1500A2923A /* FavoriteVC.swift */; };
+		0B4C644F1D373F1500A2923A /* FavoriteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B4C643B1D373F1500A2923A /* FavoriteVC.xib */; };
+		0B4C64501D373F1500A2923A /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C643E1D373F1500A2923A /* RestaurantCell.swift */; };
+		0B4C64511D373F1500A2923A /* RestaurantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B4C643F1D373F1500A2923A /* RestaurantCell.xib */; };
+		0B4C64521D373F1500A2923A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C64401D373F1500A2923A /* HomeVC.swift */; };
+		0B4C64531D373F1500A2923A /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B4C64411D373F1500A2923A /* HomeVC.xib */; };
+		0B4C64541D373F1500A2923A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C64431D373F1500A2923A /* LoginVC.swift */; };
+		0B4C64551D373F1500A2923A /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B4C64441D373F1500A2923A /* LoginVC.xib */; };
+		0B4C64561D373F1500A2923A /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C64461D373F1500A2923A /* MapVC.swift */; };
+		0B4C64571D373F1500A2923A /* MapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B4C64471D373F1500A2923A /* MapVC.xib */; };
+		0B4C64581D373F1500A2923A /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C64491D373F1500A2923A /* SettingVC.swift */; };
+		0B4C64591D373F1500A2923A /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B4C644A1D373F1500A2923A /* SettingVC.xib */; };
+		0B4C64631D373F3800A2923A /* MyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C645C1D373F3800A2923A /* MyColor.swift */; };
+		0B4C64641D373F3800A2923A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C645D1D373F3800A2923A /* Strings.swift */; };
+		0B4C64651D373F3800A2923A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C645F1D373F3800A2923A /* Common.swift */; };
+		0B4C64661D373F3800A2923A /* plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C64601D373F3800A2923A /* plist.swift */; };
+		0B4C64671D373F3800A2923A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C64621D373F3800A2923A /* User.swift */; };
+		0B4C646E1D373F6000A2923A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B4C646A1D373F6000A2923A /* Assets.xcassets */; };
+		0B4C646F1D373F6000A2923A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4C646C1D373F6000A2923A /* LaunchScreen.storyboard */; };
+		0B4C9E221D3740FF00F9B214 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B4C9E1F1D3740FF00F9B214 /* Info.plist */; };
+		0B4C9E231D3740FF00F9B214 /* Restaurants.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B4C9E201D3740FF00F9B214 /* Restaurants.plist */; };
+		0B4C9E241D3740FF00F9B214 /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B4C9E211D3740FF00F9B214 /* Users.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B4C64201D373EB100A2923A /* AT_QuangPCM_Restaurants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AT_QuangPCM_Restaurants.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B4C64231D373EB100A2923A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0B4C64251D373EB100A2923A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0B4C64281D373EB100A2923A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0B4C642A1D373EB100A2923A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0B4C642D1D373EB200A2923A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0B4C642F1D373EB200A2923A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B4C64371D373F1500A2923A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B4C64381D373F1500A2923A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B4C643A1D373F1500A2923A /* FavoriteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteVC.swift; sourceTree = "<group>"; };
+		0B4C643B1D373F1500A2923A /* FavoriteVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteVC.xib; sourceTree = "<group>"; };
+		0B4C643E1D373F1500A2923A /* RestaurantCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		0B4C643F1D373F1500A2923A /* RestaurantCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestaurantCell.xib; sourceTree = "<group>"; };
+		0B4C64401D373F1500A2923A /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		0B4C64411D373F1500A2923A /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		0B4C64431D373F1500A2923A /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		0B4C64441D373F1500A2923A /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		0B4C64461D373F1500A2923A /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		0B4C64471D373F1500A2923A /* MapVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapVC.xib; sourceTree = "<group>"; };
+		0B4C64491D373F1500A2923A /* SettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		0B4C644A1D373F1500A2923A /* SettingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingVC.xib; sourceTree = "<group>"; };
+		0B4C645C1D373F3800A2923A /* MyColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyColor.swift; sourceTree = "<group>"; };
+		0B4C645D1D373F3800A2923A /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		0B4C645F1D373F3800A2923A /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		0B4C64601D373F3800A2923A /* plist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = plist.swift; sourceTree = "<group>"; };
+		0B4C64621D373F3800A2923A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0B4C646A1D373F6000A2923A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B4C646D1D373F6000A2923A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B4C9E1F1D3740FF00F9B214 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B4C9E201D3740FF00F9B214 /* Restaurants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Restaurants.plist; sourceTree = "<group>"; };
+		0B4C9E211D3740FF00F9B214 /* Users.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Users.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +91,178 @@
 		0B4C64221D373EB100A2923A /* AT_QuangPCM_Restaurants */ = {
 			isa = PBXGroup;
 			children = (
-				0B4C64231D373EB100A2923A /* AppDelegate.swift */,
-				0B4C64251D373EB100A2923A /* ViewController.swift */,
-				0B4C64271D373EB100A2923A /* Main.storyboard */,
-				0B4C642A1D373EB100A2923A /* Assets.xcassets */,
-				0B4C642C1D373EB200A2923A /* LaunchScreen.storyboard */,
-				0B4C642F1D373EB200A2923A /* Info.plist */,
+				0B4C64351D373F1500A2923A /* Controllers */,
+				0B4C645A1D373F2C00A2923A /* Controls */,
+				0B4C645B1D373F3800A2923A /* Define */,
+				0B4C645E1D373F3800A2923A /* Library */,
+				0B4C64611D373F3800A2923A /* Model */,
+				0B4C64681D373F6000A2923A /* Resource */,
+				0B4C9E1D1D3740FF00F9B214 /* Services */,
+				0B4C9E1E1D3740FF00F9B214 /* Supports */,
 			);
 			path = AT_QuangPCM_Restaurants;
+			sourceTree = "<group>";
+		};
+		0B4C64351D373F1500A2923A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B4C64361D373F1500A2923A /* Base */,
+				0B4C64391D373F1500A2923A /* Favorite */,
+				0B4C643C1D373F1500A2923A /* Home */,
+				0B4C64421D373F1500A2923A /* Login */,
+				0B4C64451D373F1500A2923A /* Map */,
+				0B4C64481D373F1500A2923A /* Setting */,
+				0B4C644B1D373F1500A2923A /* Tabbar */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0B4C64361D373F1500A2923A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0B4C64371D373F1500A2923A /* AppDelegate.swift */,
+				0B4C64381D373F1500A2923A /* ViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0B4C64391D373F1500A2923A /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				0B4C643A1D373F1500A2923A /* FavoriteVC.swift */,
+				0B4C643B1D373F1500A2923A /* FavoriteVC.xib */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		0B4C643C1D373F1500A2923A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0B4C643D1D373F1500A2923A /* CellCustom */,
+				0B4C64401D373F1500A2923A /* HomeVC.swift */,
+				0B4C64411D373F1500A2923A /* HomeVC.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0B4C643D1D373F1500A2923A /* CellCustom */ = {
+			isa = PBXGroup;
+			children = (
+				0B4C643E1D373F1500A2923A /* RestaurantCell.swift */,
+				0B4C643F1D373F1500A2923A /* RestaurantCell.xib */,
+			);
+			path = CellCustom;
+			sourceTree = "<group>";
+		};
+		0B4C64421D373F1500A2923A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0B4C64431D373F1500A2923A /* LoginVC.swift */,
+				0B4C64441D373F1500A2923A /* LoginVC.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0B4C64451D373F1500A2923A /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				0B4C64461D373F1500A2923A /* MapVC.swift */,
+				0B4C64471D373F1500A2923A /* MapVC.xib */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		0B4C64481D373F1500A2923A /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				0B4C64491D373F1500A2923A /* SettingVC.swift */,
+				0B4C644A1D373F1500A2923A /* SettingVC.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		0B4C644B1D373F1500A2923A /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		0B4C645A1D373F2C00A2923A /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		0B4C645B1D373F3800A2923A /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				0B4C645C1D373F3800A2923A /* MyColor.swift */,
+				0B4C645D1D373F3800A2923A /* Strings.swift */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		0B4C645E1D373F3800A2923A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0B4C645F1D373F3800A2923A /* Common.swift */,
+				0B4C64601D373F3800A2923A /* plist.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		0B4C64611D373F3800A2923A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B4C64621D373F3800A2923A /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0B4C64681D373F6000A2923A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0B4C64691D373F6000A2923A /* Images */,
+				0B4C646B1D373F6000A2923A /* Language */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		0B4C64691D373F6000A2923A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0B4C646A1D373F6000A2923A /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		0B4C646B1D373F6000A2923A /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				0B4C646C1D373F6000A2923A /* LaunchScreen.storyboard */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		0B4C9E1D1D3740FF00F9B214 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			path = Resource/Services;
+			sourceTree = "<group>";
+		};
+		0B4C9E1E1D3740FF00F9B214 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				0B4C9E1F1D3740FF00F9B214 /* Info.plist */,
+				0B4C9E201D3740FF00F9B214 /* Restaurants.plist */,
+				0B4C9E211D3740FF00F9B214 /* Users.plist */,
+			);
+			name = Supports;
+			path = Resource/Supports;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +323,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B4C642E1D373EB200A2923A /* LaunchScreen.storyboard in Resources */,
-				0B4C642B1D373EB100A2923A /* Assets.xcassets in Resources */,
-				0B4C64291D373EB100A2923A /* Main.storyboard in Resources */,
+				0B4C64551D373F1500A2923A /* LoginVC.xib in Resources */,
+				0B4C64571D373F1500A2923A /* MapVC.xib in Resources */,
+				0B4C64591D373F1500A2923A /* SettingVC.xib in Resources */,
+				0B4C644F1D373F1500A2923A /* FavoriteVC.xib in Resources */,
+				0B4C646E1D373F6000A2923A /* Assets.xcassets in Resources */,
+				0B4C64531D373F1500A2923A /* HomeVC.xib in Resources */,
+				0B4C9E231D3740FF00F9B214 /* Restaurants.plist in Resources */,
+				0B4C9E241D3740FF00F9B214 /* Users.plist in Resources */,
+				0B4C64511D373F1500A2923A /* RestaurantCell.xib in Resources */,
+				0B4C9E221D3740FF00F9B214 /* Info.plist in Resources */,
+				0B4C646F1D373F6000A2923A /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,26 +344,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B4C64261D373EB100A2923A /* ViewController.swift in Sources */,
-				0B4C64241D373EB100A2923A /* AppDelegate.swift in Sources */,
+				0B4C64501D373F1500A2923A /* RestaurantCell.swift in Sources */,
+				0B4C64521D373F1500A2923A /* HomeVC.swift in Sources */,
+				0B4C64651D373F3800A2923A /* Common.swift in Sources */,
+				0B4C64541D373F1500A2923A /* LoginVC.swift in Sources */,
+				0B4C64631D373F3800A2923A /* MyColor.swift in Sources */,
+				0B4C644C1D373F1500A2923A /* AppDelegate.swift in Sources */,
+				0B4C644D1D373F1500A2923A /* ViewController.swift in Sources */,
+				0B4C64671D373F3800A2923A /* User.swift in Sources */,
+				0B4C64581D373F1500A2923A /* SettingVC.swift in Sources */,
+				0B4C64661D373F3800A2923A /* plist.swift in Sources */,
+				0B4C64561D373F1500A2923A /* MapVC.swift in Sources */,
+				0B4C64641D373F3800A2923A /* Strings.swift in Sources */,
+				0B4C644E1D373F1500A2923A /* FavoriteVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0B4C64271D373EB100A2923A /* Main.storyboard */ = {
+		0B4C646C1D373F6000A2923A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0B4C64281D373EB100A2923A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0B4C642C1D373EB200A2923A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B4C642D1D373EB200A2923A /* Base */,
+				0B4C646D1D373F6000A2923A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -251,7 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AT_QuangPCM_Restaurants/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AT_QuangPCM_Restaurants/Resource/Supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fu.AT-QuangPCM-Restaurants";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -262,10 +474,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AT_QuangPCM_Restaurants/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AT_QuangPCM_Restaurants/Resource/Supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fu.AT-QuangPCM-Restaurants";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -288,6 +501,7 @@
 				0B4C64341D373EB200A2923A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
