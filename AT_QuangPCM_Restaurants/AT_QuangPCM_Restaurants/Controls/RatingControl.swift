@@ -9,7 +9,7 @@
 import UIKit
 
 private extension Selector {
-    static let didTapRatingButton = #selector(RatingControl.didTapRatingButton(_:))
+    static let didTapRatingButton = Selector(RatingControl.didTapRatingButton(_:))
 }
 
 class RatingControl: UIView {
@@ -25,6 +25,7 @@ class RatingControl: UIView {
             let button = UIButton(frame: CGRect(x: 0, y: 0, width: ButtonSize.ratingButton.width, height: ButtonSize.ratingButton.height))
             button.tag = i
             button.addTarget(self, action: .didTapRatingButton, forControlEvents: .TouchUpInside)
+
             button.setBackgroundImage(UIImage(named: "ic_rating"), forState: .Normal)
             self.ratingButtons.append(button)
             addSubview(button)
