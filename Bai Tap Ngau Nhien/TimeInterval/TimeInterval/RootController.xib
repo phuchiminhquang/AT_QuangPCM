@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootController" customModule="TimeInterval" customModuleProvider="target">
+            <connections>
+                <outlet property="currentTimeTF" destination="dsv-a1-SYU" id="3hc-gl-L24"/>
+                <outlet property="datatimePickerView" destination="8Ec-Ay-XNX" id="89t-1d-Vj2"/>
+                <outlet property="messageTF" destination="C3e-h2-lZh" id="h9A-H6-W0o"/>
+                <outlet property="pastTimeTF" destination="kZP-e0-OxW" id="jTk-uB-SEv"/>
+                <outlet property="timeIntervalTF" destination="jKq-mZ-8Sj" id="b8Z-9l-upT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="8Ec-Ay-XNX">
+                    <rect key="frame" x="0.0" y="368" width="320" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Y3l-0v-XaF"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="490155220.03311801">
+                        <!--2016-07-14 02:13:40 +0000-->
+                    </date>
+                </datePicker>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kZP-e0-OxW">
+                    <rect key="frame" x="40" y="164" width="240" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="gyk-hO-uNP"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dsv-a1-SYU">
+                    <rect key="frame" x="40" y="96" width="240" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="jjv-gH-XsS"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jKq-mZ-8Sj">
+                    <rect key="frame" x="40" y="233" width="240" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="VW7-OS-muM"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEN-Ey-Y96">
+                    <rect key="frame" x="50" y="303" width="220" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Nck-BW-zA4"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="bt_bg_Enter"/>
+                    <connections>
+                        <action selector="didTapCalculateITimeInterval:" destination="-1" eventType="touchUpInside" id="SzC-xo-yFM"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3e-h2-lZh">
+                    <rect key="frame" x="160" y="70" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.84406459731543626" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dsv-a1-SYU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="04p-vk-lLg"/>
+                <constraint firstAttribute="bottom" secondItem="8Ec-Ay-XNX" secondAttribute="bottom" id="203-FV-6Wk"/>
+                <constraint firstAttribute="trailing" secondItem="dsv-a1-SYU" secondAttribute="trailing" constant="40" id="3pB-bq-Lcx"/>
+                <constraint firstItem="C3e-h2-lZh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="5ES-qJ-xFI"/>
+                <constraint firstItem="C3e-h2-lZh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7CG-FQ-DEr"/>
+                <constraint firstAttribute="trailing" secondItem="8Ec-Ay-XNX" secondAttribute="trailing" id="9G5-HG-u8T"/>
+                <constraint firstItem="UEN-Ey-Y96" firstAttribute="top" secondItem="jKq-mZ-8Sj" secondAttribute="bottom" constant="30" id="Inc-I1-4Tx"/>
+                <constraint firstItem="8Ec-Ay-XNX" firstAttribute="top" secondItem="UEN-Ey-Y96" secondAttribute="bottom" constant="15" id="L2F-K1-d1a"/>
+                <constraint firstItem="kZP-e0-OxW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="MP4-uX-Gqr"/>
+                <constraint firstAttribute="trailing" secondItem="kZP-e0-OxW" secondAttribute="trailing" constant="40" id="SiA-FP-79x"/>
+                <constraint firstAttribute="trailing" secondItem="jKq-mZ-8Sj" secondAttribute="trailing" constant="40" id="Xup-mB-BhA"/>
+                <constraint firstAttribute="trailing" secondItem="UEN-Ey-Y96" secondAttribute="trailing" constant="50" id="f0U-eT-hsJ"/>
+                <constraint firstItem="jKq-mZ-8Sj" firstAttribute="top" secondItem="kZP-e0-OxW" secondAttribute="bottom" constant="29" id="gEo-Xe-g5S"/>
+                <constraint firstItem="8Ec-Ay-XNX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="k0O-GN-2eJ"/>
+                <constraint firstItem="jKq-mZ-8Sj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="tL7-UH-EGV"/>
+                <constraint firstItem="UEN-Ey-Y96" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="x6a-vx-NIz"/>
+                <constraint firstItem="kZP-e0-OxW" firstAttribute="top" secondItem="dsv-a1-SYU" secondAttribute="bottom" constant="28" id="yWN-Ky-i8T"/>
+                <constraint firstItem="UEN-Ey-Y96" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="yjS-z0-hbj"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="364" y="382"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bt_bg_Enter" width="318" height="51"/>
+    </resources>
+</document>
