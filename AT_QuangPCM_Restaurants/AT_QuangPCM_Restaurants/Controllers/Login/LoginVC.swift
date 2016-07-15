@@ -161,7 +161,7 @@ class LoginVC: ViewController {
             let user = User(name: name, email: email, password: password, photo: nil)
             if user.isUserExisted() {
                 print("welcome \(user.name)")
-                AppDelegate.appDelegate.loginSuccess()
+                kAppDelegate?.loginSuccess()
             } else {
                 print("Sorry, User is not correct")
             }
@@ -205,6 +205,7 @@ class LoginVC: ViewController {
                     
                     //4
                     print(plist.getValuesInPlistFile())
+                    kAppDelegate?.loginSuccess()
                 } else {
                     print("Unable to get Plist")
                 }
@@ -225,9 +226,7 @@ class LoginVC: ViewController {
         alertController.addTextFieldWithConfigurationHandler(nil)
         
         let submitAction = UIAlertAction(title: "Submit", style: .Default) { [unowned self, alertController] (action: UIAlertAction!) in
-            let email = alertController.textFields![0] as! UITextField
-    
-            
+            let email = alertController.textFields![0] 
             //1
             if let plist = Plist(name: "Users") {
                 //2

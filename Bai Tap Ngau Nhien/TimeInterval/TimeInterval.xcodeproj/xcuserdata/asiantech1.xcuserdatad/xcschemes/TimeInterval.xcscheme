@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0B4C641F1D373EB100A2923A"
-               BuildableName = "AT_QuangPCM_Restaurants.app"
-               BlueprintName = "AT_QuangPCM_Restaurants"
-               ReferencedContainer = "container:AT_QuangPCM_Restaurants.xcodeproj">
+               BlueprintIdentifier = "0B4C63DD1D372C1800A2923A"
+               BuildableName = "TimeInterval.app"
+               BlueprintName = "TimeInterval"
+               ReferencedContainer = "container:TimeInterval.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0B4C641F1D373EB100A2923A"
-            BuildableName = "AT_QuangPCM_Restaurants.app"
-            BlueprintName = "AT_QuangPCM_Restaurants"
-            ReferencedContainer = "container:AT_QuangPCM_Restaurants.xcodeproj">
+            BlueprintIdentifier = "0B4C63DD1D372C1800A2923A"
+            BuildableName = "TimeInterval.app"
+            BlueprintName = "TimeInterval"
+            ReferencedContainer = "container:TimeInterval.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0B4C641F1D373EB100A2923A"
-            BuildableName = "AT_QuangPCM_Restaurants.app"
-            BlueprintName = "AT_QuangPCM_Restaurants"
-            ReferencedContainer = "container:AT_QuangPCM_Restaurants.xcodeproj">
+            BlueprintIdentifier = "0B4C63DD1D372C1800A2923A"
+            BuildableName = "TimeInterval.app"
+            BlueprintName = "TimeInterval"
+            ReferencedContainer = "container:TimeInterval.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0B4C641F1D373EB100A2923A"
-            BuildableName = "AT_QuangPCM_Restaurants.app"
-            BlueprintName = "AT_QuangPCM_Restaurants"
-            ReferencedContainer = "container:AT_QuangPCM_Restaurants.xcodeproj">
+            BlueprintIdentifier = "0B4C63DD1D372C1800A2923A"
+            BuildableName = "TimeInterval.app"
+            BlueprintName = "TimeInterval"
+            ReferencedContainer = "container:TimeInterval.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

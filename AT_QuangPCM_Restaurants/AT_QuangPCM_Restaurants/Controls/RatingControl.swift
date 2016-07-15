@@ -9,7 +9,7 @@
 import UIKit
 
 private extension Selector {
-    static let didTapRatingButton = Selector(RatingControl.didTapRatingButton(_:))
+    static let didTapRatingButton = #selector(RatingControl.didTapRatingButton(_:))
 }
 
 class RatingControl: UIView {

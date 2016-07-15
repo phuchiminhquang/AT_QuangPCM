@@ -7,7 +7,7 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="AT_QuangPCM" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="AT_QuangPCM_Restaurants" customModuleProvider="target">
             <connections>
                 <outlet property="bg_top_imageView" destination="Agg-1g-jMH" id="NvT-fy-CHd"/>
                 <outlet property="login_Email" destination="8Zr-2r-gJS" id="KXT-zD-sSe"/>
@@ -61,8 +61,9 @@
                                 <constraint firstAttribute="width" constant="4" id="Vw3-h0-zG6"/>
                             </constraints>
                         </view>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Zr-2r-gJS" userLabel="email">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123@gmail.com" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Zr-2r-gJS" userLabel="email">
                             <rect key="frame" x="21" y="0.0" width="309" height="52"/>
+                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             <connections>
@@ -70,7 +71,7 @@
                             </connections>
                         </textField>
                     </subviews>
-                    <color key="backgroundColor" red="0.88231169870000004" green="0.114600037" blue="0.36286654610000002" alpha="0.30193965519999999" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="8Zr-2r-gJS" secondAttribute="bottom" id="2zR-IL-JTb"/>
                         <constraint firstItem="Fpl-82-SEK" firstAttribute="top" secondItem="rHm-yd-i1j" secondAttribute="top" id="FaP-XQ-WK3"/>
@@ -92,8 +93,9 @@
                                 <constraint firstAttribute="width" constant="4" id="4Ou-gi-grh"/>
                             </constraints>
                         </view>
-                        <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2z-AL-0LB">
+                        <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2z-AL-0LB">
                             <rect key="frame" x="21" y="0.0" width="269" height="52"/>
+                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                             <connections>
@@ -107,7 +109,7 @@
                             </constraints>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" red="0.25882352939999997" green="0.83529411760000005" blue="0.31372549020000001" alpha="0.26101831896551725" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="CyK-6E-sXU" firstAttribute="top" secondItem="wro-WU-NuK" secondAttribute="top" id="0gZ-hy-oIf"/>
                         <constraint firstAttribute="bottom" secondItem="f2z-AL-0LB" secondAttribute="bottom" id="HqD-oH-4kI"/>

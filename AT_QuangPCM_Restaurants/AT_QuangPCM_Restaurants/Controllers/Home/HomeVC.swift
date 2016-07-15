@@ -81,6 +81,7 @@ class HomeVC: UIViewController {
                     var foodPhotos = [String]()
                     for item in menu {
                         foodPhotos.append(item as? String ?? "no_pictrue")
+//                        print("da append")
                     }
                     res.food?.append(Food(name: nil, des: nil, photo: foodPhotos))
                 }
@@ -130,6 +131,29 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let detail = RestaurantDetailVC(nibName: "RestaurantDetailVC", bundle: nil)
+        if let restaurant = self.restaurants?[indexPath.row] {
+            detail.setupData(restaurant)
+            print("\(restaurant.food?[0].photo?.count)")
+        }
         self.navigationController?.pushViewController(detail, animated: true)
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

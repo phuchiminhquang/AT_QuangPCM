@@ -20,6 +20,8 @@ class Food {
     }
 }
 
+//class MapLocation
+
 class Restaurant {
     
     // 
@@ -33,7 +35,7 @@ class Restaurant {
     var latitue: Double = 0.0
     var longtitue: Double = 0.0
     
-    var food: [Food]?
+    var food: [Food]? = []
     
     var rating = 0
     var isFavoratie = false

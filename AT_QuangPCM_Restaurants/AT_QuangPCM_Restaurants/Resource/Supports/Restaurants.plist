@@ -21,9 +21,9 @@ Mùa hè nóng nực thì Bingsu chà bá là toẹt vời luôn, bảo sao các
 Tiệm này toàn bánh ngon thôi các bạn à, bánh nào nhìn cũng ngon cũng lạ hết, qua ăn thử bánh dừa tắc liền nè. 10. Khu ăn vặt công viên Thiên Phước
 Khu ăn vặt này mới nổi à, mà lên vùn vụt trên insta luôn, nào là soup cua, bánh bạch tuộc, trà đào, tá lả luôn. Toàn món hot thôi á. </string>
 		<key>latitue</key>
-		<integer>0</integer>
+		<real>16.062482</real>
 		<key>longtitue</key>
-		<integer>0</integer>
+		<real>108.22306</real>
 		<key>menus</key>
 		<array>
 			<string>bg_res1_food1</string>
