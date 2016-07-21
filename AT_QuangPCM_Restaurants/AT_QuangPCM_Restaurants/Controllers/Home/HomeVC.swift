@@ -134,6 +134,7 @@ class HomeVC: UIViewController {
 //                let item = self.restaurants[index]
                 let item = Venues.sharedInstance.restaurants[index]
                 item.thumbnailImage = UIImage(data: data!)
+                UIImage()
                 
                 print("Da Load Image for \(item.name)")
                 var indexPaths = [NSIndexPath]()
@@ -203,48 +204,7 @@ extension HomeVC: UIScrollViewDelegate {
                 self.isLoading = true
                 print("LOADING DATA isLoading \(self.isLoading)")
                 
-                // Setup parameters
-                let parameters = ["offset": self.offset, "limit": self.limit]
-                
-                // Setup request
-                let request = Request.getRequestWith("GET", strURL: nil, parameters: parameters)
-                
-                // Connection
-                API.sharedInstance.connect(request, complete: { (data, error, message) in
-                    if error {
-                        print("ERROR DURING GET DATA")
-                    } else {
-  
-                        do {
-                            if let json = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? NSDictionary {
-                                //print(json)
-                                if let response = json["response"] {
-                                    if let venues = response["venues"] as? NSArray {
-                                        
-                                        if venues.count < self.limit {
-                                            self.isSentRequest = false
-                                            print("WERSERVIE OUT OF DATA")
-                                        }
-                                        
-                                        for (index, item) in venues.enumerate() {
-                                            let res = Restaurant.getObjectFromJson(item as! NSDictionary)
-                                            Venues.sharedInstance.addRestaurant(res)
-                                            //                                            self.restaurants.append(res)
-                                            self.getListPhotos(res, index: index + self.offset)
-                                        }
-                                        self.offset = Venues.sharedInstance.restaurants.count
-                                        self.isLoading = false
-                                        print("Loaded data isLoading: \(self.isLoading)")
-                                        
-                                    }
-                                }
-                            }
-                        } catch {
-                            
-                        }
-
-                    }
-                })
+                self.loadData()
             }
             print("\(scrollView.contentOffset.y + self.view.bounds.size.height - scrollView.contentSize.height) Stay at the last row")
         }
