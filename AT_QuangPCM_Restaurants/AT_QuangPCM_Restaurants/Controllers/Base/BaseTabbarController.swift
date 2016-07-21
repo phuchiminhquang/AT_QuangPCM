@@ -24,8 +24,8 @@ class BaseTabbarController: UITabBarController {
     func configTabbarController() {
         let homeVC = HomeVC(nibName: "HomeVC", bundle: nil)
         let favoriteVC = FavoriteVC(nibName: "FavoriteVC", bundle: nil)
-        let mapVC = MapVC(nibName: "FavoriteVC", bundle: nil)
-        let settingVC = SettingVC(nibName: "FavoriteVC", bundle: nil)
+        let mapVC = MapVC(nibName: "MapVC", bundle: nil)
+        let settingVC = SettingVC(nibName: "SettingVC", bundle: nil)
         
         let homeNavi = UINavigationController(rootViewController: homeVC)
         let favoriteNavi = UINavigationController(rootViewController: favoriteVC)

@@ -36,11 +36,15 @@
 		0BCAD7BC1D377FF1007E2EF4 /* RestaurantDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BCAD7BA1D377FF1007E2EF4 /* RestaurantDetailVC.xib */; };
 		0BCAD7C01D378F96007E2EF4 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD7BE1D378F96007E2EF4 /* CustomCollectionViewCell.swift */; };
 		0BCAD7C11D378F96007E2EF4 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BCAD7BF1D378F96007E2EF4 /* CustomCollectionViewCell.xib */; };
+		E11A603F1D3F5E8300836CF7 /* AnnotationPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11A603E1D3F5E8300836CF7 /* AnnotationPhoto.swift */; };
 		E13AC7E71D387F5B003EB423 /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13AC7E61D387F5B003EB423 /* BaseTabbarController.swift */; };
 		E196399D1D388012003AD204 /* MyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E196399C1D388012003AD204 /* MyExtension.swift */; };
 		E196399F1D38C93A003AD204 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E196399E1D38C93A003AD204 /* Artwork.swift */; };
 		E19639AC1D38E917003AD204 /* MapDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19639AA1D38E917003AD204 /* MapDetailVC.swift */; };
 		E19639AD1D38E917003AD204 /* MapDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19639AB1D38E917003AD204 /* MapDetailVC.xib */; };
+		E1E95C071D3F1E1700A5A4A5 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E95C061D3F1E1700A5A4A5 /* Cache.swift */; };
+		E1EAE1071D3E34BE00BDC8BD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EAE1061D3E34BE00BDC8BD /* API.swift */; };
+		E1EAE1091D3E34C400BDC8BD /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EAE1081D3E34C400BDC8BD /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,11 +79,15 @@
 		0BCAD7BA1D377FF1007E2EF4 /* RestaurantDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestaurantDetailVC.xib; sourceTree = "<group>"; };
 		0BCAD7BE1D378F96007E2EF4 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		0BCAD7BF1D378F96007E2EF4 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		E11A603E1D3F5E8300836CF7 /* AnnotationPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationPhoto.swift; sourceTree = "<group>"; };
 		E13AC7E61D387F5B003EB423 /* BaseTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabbarController.swift; sourceTree = "<group>"; };
 		E196399C1D388012003AD204 /* MyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyExtension.swift; sourceTree = "<group>"; };
 		E196399E1D38C93A003AD204 /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		E19639AA1D38E917003AD204 /* MapDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDetailVC.swift; sourceTree = "<group>"; };
 		E19639AB1D38E917003AD204 /* MapDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapDetailVC.xib; sourceTree = "<group>"; };
+		E1E95C061D3F1E1700A5A4A5 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		E1EAE1061D3E34BE00BDC8BD /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		E1EAE1081D3E34C400BDC8BD /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,8 +250,12 @@
 		0B4C64611D373F3800A2923A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E1EAE1081D3E34C400BDC8BD /* Request.swift */,
+				E1EAE1061D3E34BE00BDC8BD /* API.swift */,
 				0B4C64621D373F3800A2923A /* User.swift */,
 				0B2CD40B1D3752DA005335A6 /* Restaurant.swift */,
+				E1E95C061D3F1E1700A5A4A5 /* Cache.swift */,
+				E11A603E1D3F5E8300836CF7 /* AnnotationPhoto.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -394,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1EAE1071D3E34BE00BDC8BD /* API.swift in Sources */,
 				0B2CD40A1D374534005335A6 /* RatingControl.swift in Sources */,
 				0B4C64501D373F1500A2923A /* RestaurantCell.swift in Sources */,
 				0B4C64521D373F1500A2923A /* HomeVC.swift in Sources */,
@@ -401,13 +414,16 @@
 				0B4C64541D373F1500A2923A /* LoginVC.swift in Sources */,
 				E19639AC1D38E917003AD204 /* MapDetailVC.swift in Sources */,
 				0B2CD40C1D3752DA005335A6 /* Restaurant.swift in Sources */,
+				E1EAE1091D3E34C400BDC8BD /* Request.swift in Sources */,
 				0B4C64631D373F3800A2923A /* MyColor.swift in Sources */,
+				E1E95C071D3F1E1700A5A4A5 /* Cache.swift in Sources */,
 				0B4C644C1D373F1500A2923A /* AppDelegate.swift in Sources */,
 				0BCAD7C01D378F96007E2EF4 /* CustomCollectionViewCell.swift in Sources */,
 				0BCAD7BB1D377FF1007E2EF4 /* RestaurantDetailVC.swift in Sources */,
 				E196399F1D38C93A003AD204 /* Artwork.swift in Sources */,
 				0B4C644D1D373F1500A2923A /* ViewController.swift in Sources */,
 				0B4C64671D373F3800A2923A /* User.swift in Sources */,
+				E11A603F1D3F5E8300836CF7 /* AnnotationPhoto.swift in Sources */,
 				0B4C64581D373F1500A2923A /* SettingVC.swift in Sources */,
 				0B4C64661D373F3800A2923A /* plist.swift in Sources */,
 				E13AC7E71D387F5B003EB423 /* BaseTabbarController.swift in Sources */,

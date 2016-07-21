@@ -47,8 +47,8 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="restaurantName" destination="8ad-5b-JyM" id="VwL-UB-2Lx"/>
-                <outlet property="restaurantPhoto" destination="Amw-mo-GE2" id="tXd-1O-Xcn"/>
+                <outlet property="name" destination="8ad-5b-JyM" id="AwL-ts-msk"/>
+                <outlet property="photo" destination="Amw-mo-GE2" id="h9Q-PN-Yci"/>
             </connections>
             <point key="canvasLocation" x="528" y="304"/>
         </tableViewCell>

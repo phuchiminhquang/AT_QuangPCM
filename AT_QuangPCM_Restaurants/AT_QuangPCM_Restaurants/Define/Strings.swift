@@ -31,6 +31,8 @@ class Strings {
     // MARK: 
     static let restaurantCellIdentified = "RestaurantCell"
     
+    
+
     // MARK:- Words
     static let Cancel = "キャンセル"
     static let Done = "Done"

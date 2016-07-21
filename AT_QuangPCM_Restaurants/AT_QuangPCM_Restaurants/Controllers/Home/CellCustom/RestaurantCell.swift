@@ -11,8 +11,8 @@ import UIKit
 class RestaurantCell: UITableViewCell {
 
     // MARK: IBOutlet
-    @IBOutlet weak var restaurantPhoto: UIImageView!
-    @IBOutlet weak var restaurantName: UILabel!
+    @IBOutlet weak var photo: UIImageView!
+    @IBOutlet weak var name: UILabel!
     
     
     override func awakeFromNib() {
@@ -28,8 +28,8 @@ class RestaurantCell: UITableViewCell {
     
     // MARK: private function
     func configurationUI() {
-        self.restaurantPhoto.border(5)
-        self.restaurantName.adjustsFontSizeToFitWidth = true
+        self.photo.border(5)
+        self.name.adjustsFontSizeToFitWidth = true
     }
     
 }

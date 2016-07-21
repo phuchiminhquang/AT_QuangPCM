@@ -9,10 +9,14 @@
 import UIKit
 import MapKit
 
+
 private extension Selector {
     static let didTapFavorite = #selector(RestaurantDetailVC.didTapFavoriteRightBarButton(_:))
 }
 
+struct LocationCoordinate {
+    static let DaNang = CLLocation(latitude: 16.0544068, longitude: 108.20216670000002)
+}
 
 class RestaurantDetailVC: UIViewController {
 
@@ -27,13 +31,13 @@ class RestaurantDetailVC: UIViewController {
     
     // MARK: Property
     let photos = ["bg_res1","bg_res2","bg_res3"]
-    let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
-    var restautant: Restaurant? = nil
+    var restautant: Restaurant?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Detail"
-        centerMapOnLocation(initialLocation)
+//        centerMapOnLocation(LocationCoordinate.DaNang)
         self.configurationUI()
         self.fillData()
         self.configPageController()
@@ -41,7 +45,6 @@ class RestaurantDetailVC: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
     }
     
     
@@ -63,9 +66,8 @@ class RestaurantDetailVC: UIViewController {
         
         let nib = UINib(nibName: "CustomCollectionViewCell", bundle: nil)
         self.collectionView.registerNib(nib, forCellWithReuseIdentifier: "Cell")
-    
         
-        
+        self.loadLocation()
         
         // show artwork on map
 //        let artwork = Artwork(title: "King David Kalakaua",
@@ -75,44 +77,44 @@ class RestaurantDetailVC: UIViewController {
 //        mapView.delegate = self
 //        mapView.addAnnotation(artwork)
         
-        let location = CLLocationCoordinate2D(latitude: 16.0544068, longitude: 108.20216670000002)
-        let span = MKCoordinateSpanMake(0.05, 0.05)
+    }
+    
+    func loadLocation() {
+        let longtitude = self.restautant?.location?.longtitue ?? 0
+        let latitude = self.restautant?.location?.latitue ?? 0
+        let title = self.restautant?.name ?? "No Name"
+        let subTitle = self.restautant?.location?.address ?? "No Address"
+
+        
+        let location = CLLocationCoordinate2D(latitude: latitude, longitude: longtitude)
+        let span = MKCoordinateSpanMake(0.01, 0.01)
         let region = MKCoordinateRegionMake(location, span)
         mapView.setRegion(region, animated: true)
-
-        let longtitude = self.restautant?.longtitue ?? 0
-        let latitude = self.restautant?.latitue ?? 0
-        let title = self.restautant?.name ?? "No Name"
-        let subTitle = self.restautant?.address ?? "No Address"
         
         let annotation = MKPointAnnotation()
-        annotation.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longtitude)
+        
+        annotation.coordinate = location
         annotation.title = title
         annotation.subtitle = subTitle
         mapView.addAnnotation(annotation)
-    
     }
-    
     
     func fillData() {
         if let restaurant = self.restautant {
             self.restaurantName.text = restaurant.name
-            self.restaurantAddress.text = restaurant.address
-            self.restaurantShortDescription.text = restaurant.shortDes
-            self.restaurantLongDescription.text = restaurant.longDes
+            self.restaurantAddress.text = restaurant.location?.address
+            self.restaurantShortDescription.text = restaurant.name
+            self.restaurantLongDescription.text = restaurant.name
         }
     }
     
     func didTapFavoriteRightBarButton(sender: UIButton) {
         sender.selected = !sender.selected
-//        sender.setBackgroundImage(UIImage(named: "bt_bg_favorite_active"), forState: .Normal)
+
     }
     
     @IBAction func didTabNextSlide(sender: AnyObject) {
-        var count = 0
-        if let foods = self.restautant?.food {
-            count = foods[0].photo?.count ?? 0
-        }
+        let count = self.restautant?.photoLinks.count
 
         if (self.pageControl.currentPage + 1 < count) {
             self.pageControl.currentPage = self.pageControl.currentPage + 1
@@ -135,19 +137,18 @@ class RestaurantDetailVC: UIViewController {
     }
     
     func configPageController() {
-        if let foods = self.restautant?.food {
-            self.pageControl.numberOfPages = foods[0].photo?.count ?? 0
+        if let count = self.restautant?.photoLinks.count where count < 5{
+            self.pageControl.numberOfPages = count
+            self.pageControl.currentPage = 0
+            self.pageControl.tintColor = UIColor.blueColor()
+            self.pageControl.pageIndicatorTintColor = UIColor.grayColor()
+            self.pageControl.currentPageIndicatorTintColor = MyColor.borderGrayColor
+        } else {
+            self.pageControl.hidden = true
         }
-
-        self.pageControl.currentPage = 0
-        self.pageControl.tintColor = UIColor.grayColor()
-        self.pageControl.pageIndicatorTintColor = UIColor.grayColor()
-        self.pageControl.currentPageIndicatorTintColor = MyColor.borderGrayColor
-//        self.imageScrollView.addSubview(pageControl)
     }
     
     // Config for MapKit
-    
     let regionRadius: CLLocationDistance = 1000
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
@@ -159,25 +160,29 @@ class RestaurantDetailVC: UIViewController {
 extension RestaurantDetailVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        if let foods = self.restautant?.food {
-            return foods.count
-        }
-        return 0
+        return 1
     }
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if let foods = self.restautant?.food {
-            let count = foods[section].photo?.count ?? 0
-            print("\(count)")
+        if let count = self.restautant?.photoLinks.count {
             return count
         }
         return 0
     }
+    
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         print("")
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! CustomCollectionViewCell
-        let foodPhotoOfSectionAtIndex = self.restautant?.food?[indexPath.section].photo?[indexPath.row] ?? "no_picture"
-        print("\(foodPhotoOfSectionAtIndex)")
-        cell.photoImageView.image = UIImage(named: foodPhotoOfSectionAtIndex)
+        let photoPath = self.restautant!.photoLinks[indexPath.row]
+  
+        self.downloadPhoto(photoPath, index: indexPath.row)
+        
+//        if Cache.sharedInstance.objectForKey(photoPath) != nil {
+//            cell.photoImageView.image = Cache.sharedInstance.objectForKey(photoPath) as? UIImage
+//        } else {
+//            cell.photoImageView.image = nil
+//            self.downloadPhoto(photoPath, index: indexPath.row)
+//        }
+        
         
         return cell
     }
@@ -189,70 +194,71 @@ extension RestaurantDetailVC: UICollectionViewDelegate, UICollectionViewDataSour
         let height = self.collectionView.frame.height
         return CGSize(width: width, height: height)
     }
+    
+    func downloadPhoto(photoPath: String, index: Int) {
+        print("DOWNLOAD IMAGE \(photoPath)")
+    
+        let request = Request.getRequestWith("GET", strURL: photoPath, parameters: nil)
+        API.sharedInstance.dowloadImage(photoPath, request: request) { (image, error) in
+            if error {
+                print("ERROR DURING DOWNLOAD IMAGE \(photoPath)")
+            } else {
+                let indexPath = NSIndexPath(forItem: index, inSection: 0)
+                if let cell = self.collectionView.cellForItemAtIndexPath(indexPath) as? CustomCollectionViewCell {
+                    cell.photoImageView.image = image
+                }
+            }
+
+            }
+    }
 }
+
 
 
 
 extension RestaurantDetailVC: MKMapViewDelegate {
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
-//        if let annotation = annotation as? Artwork {
-//            let identifier = "pin"
-//            var view: MKPinAnnotationView
-//            if let dequeuedView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier)
-//                as? MKPinAnnotationView { // 2
-//                dequeuedView.annotation = annotation
-//                view = dequeuedView
-//            } else {
-//                // 3
-//                view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-//                view.canShowCallout = true
-//                view.calloutOffset = CGPoint(x: -5, y: 5)
-//                view.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure)
-//            }
-//            return view
-//        }
-//        return nil
-//        let reuseIdentifier = "red_pin"
-//        var pinView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseIdentifier)
-//        if pinView == nil {
-//            pinView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseIdentifier)
-//            pinView!.canShowCallout = true
-//        } else {
-//            pinView!.annotation = annotation
-//        }
-//        pinView!.image = UIImage(named: "red_pin")
-//        let button = UIButton(type: UIButtonType.DetailDisclosure) as UIButton
-//        pinView?.rightCalloutAccessoryView = button
-//        return pinView
         
-        let identifier = "pin"
-        var pinView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier) as? MKPinAnnotationView
+        guard !annotation.isKindOfClass(MKUserLocation) else {
+            return nil
+        }
         
+        let annotationIdentifier = "AnnotationIdentifier"
         
-        if pinView == nil {
-            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            pinView?.canShowCallout = true
-            pinView?.animatesDrop = true
-            pinView?.tintColor = UIColor.greenColor()
-            
-//            pinView?.image = UIImage(named: "ic_tbItem_map")
-            let button = UIButton(type: UIButtonType.DetailDisclosure) as UIButton
-            pinView?.rightCalloutAccessoryView = button
+        var annotationView: MKAnnotationView?
+        
+        if let dequeuedAnnotationView = mapView.dequeueReusableAnnotationViewWithIdentifier(annotationIdentifier) {
+            annotationView = dequeuedAnnotationView
+            annotationView?.annotation = annotation
         }
         else {
-            pinView?.annotation = annotation
-        }
-        return pinView
-    }
-    
-    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
-        let detailMap = MapDetailVC()
-        let selectedLocal = view.annotation! as MKAnnotation
-        detailMap.locate = selectedLocal
-        self.navigationController?.pushViewController(detailMap, animated: true)
-    }
+            let av = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
+            av.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure)
+            
+            annotationView = av
+            let iconView = UIImageView(image: UIImage(named: "ic_tbItem_favorite"))
+            annotationView?.leftCalloutAccessoryView = iconView
 
+        }
+        if let annotationView = annotationView {
+            annotationView.canShowCallout = true
+            annotationView.image = UIImage(named: "bg_pin")
+        }
+        
+        return annotationView
+    }
+  
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView,
+                 calloutAccessoryControlTapped control: UIControl) {
+        
+        if control == view.rightCalloutAccessoryView {
+            let detailMap = MapDetailVC()
+            detailMap.resLocation = restautant?.location
+            self.navigationController?.pushViewController(detailMap, animated: true)
+        }
+        
+    }
     
     
     // map zom

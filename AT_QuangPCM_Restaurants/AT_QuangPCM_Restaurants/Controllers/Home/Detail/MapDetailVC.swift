@@ -10,43 +10,52 @@ import UIKit
 import MapKit
 
 
-class MapDetailVC: UIViewController, MKMapViewDelegate {
+let currentLocal = CLLocationCoordinate2D(latitude: 16.0544, longitude: 108.20)
+var resLocal = CLLocationCoordinate2D(latitude: 0, longitude: 0 )
+
+class MapDetailVC: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     
     var locate: MKAnnotation? = nil
+    var resLocation: Location!
+    var centerLocation: CLLocationCoordinate2D!
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        
-        let location = CLLocationCoordinate2D(latitude: 16.0544068, longitude: 108.20216670000002)
-        let span = MKCoordinateSpanMake(0.05, 0.05)
-        let region = MKCoordinateRegionMake(location, span)
-        mapView.setRegion(region, animated: true)
-        
-        var annotation = MKPointAnnotation()
-        annotation.coordinate = CLLocationCoordinate2D(latitude: 16.0544, longitude: 108.20)
-        annotation.title = "Current Location"
-        annotation.subtitle = "you're here"
-        mapView.addAnnotation(annotation)
-        
-        annotation = MKPointAnnotation()
-        let latitue = locate?.coordinate.latitude ?? 0
-        let longtitue = locate?.coordinate.longitude ?? 0
-        annotation.coordinate = CLLocationCoordinate2D(latitude: latitue, longitude: longtitue)
-        annotation.title = "ABC"
-        annotation.subtitle = "XYZ"
-        mapView.addAnnotation(annotation)
-        
-        showRouteOnMap()
+        self.loadLocation()
+        showRouteOnMap(currentLocal,resLocal: resLocal)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func loadLocation() {
+        var annotation = MKPointAnnotation()
+        
+        annotation.coordinate = currentLocal
+        annotation.title = "Current Location"
+        annotation.subtitle = "you're here"
+        mapView.addAnnotation(annotation)
+        
+        annotation = MKPointAnnotation()
+        let latitue = self.resLocation.latitue
+        let longtitue = self.resLocation.longtitue
+        resLocal = CLLocationCoordinate2D(latitude: latitue, longitude: longtitue)
+        annotation.coordinate = resLocal
+        annotation.title = self.resLocation.name
+        annotation.subtitle = self.resLocation.address
+        mapView.addAnnotation(annotation)
 
+    }
+}
+
+
+extension MapDetailVC: MKMapViewDelegate {
+    
     func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
         if overlay is MKPolyline {
             let polylineRenderer = MKPolylineRenderer(overlay: overlay)
@@ -57,20 +66,11 @@ class MapDetailVC: UIViewController, MKMapViewDelegate {
         return MKOverlayRenderer()
     }
     
-    func showRouteOnMap(){
+    func showRouteOnMap(currentLocal: CLLocationCoordinate2D, resLocal: CLLocationCoordinate2D){
         self.mapView.delegate = self
         let request = MKDirectionsRequest()
-        let currentLocal = CLLocationCoordinate2D(latitude: 16.0762123, longitude: 108.2355277)
-        
-        let currentPlaceMark = MKPlacemark(coordinate: currentLocal, addressDictionary: nil)
-        let currentAnnotation = MKPointAnnotation()
-        currentAnnotation.title = "Current Location"
-        if let location = currentPlaceMark.location {
-            currentAnnotation.coordinate = location.coordinate
-        }
-        
         request.source = MKMapItem(placemark: MKPlacemark(coordinate: currentLocal, addressDictionary: nil))
-        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: locate!.coordinate, addressDictionary: nil))
+        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: resLocal, addressDictionary: nil))
         request.requestsAlternateRoutes = true
         request.transportType = .Automobile
         let direction = MKDirections(request: request)
@@ -83,5 +83,17 @@ class MapDetailVC: UIViewController, MKMapViewDelegate {
             }
         }
     }
+}
+
+extension MapDetailVC: CLLocationManagerDelegate {
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations.last!
+        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        self.mapView.setRegion(region, animated: true)
+
+    }
+    
 }
 
